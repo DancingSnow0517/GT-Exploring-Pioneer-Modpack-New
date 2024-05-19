@@ -1,4 +1,5 @@
 {
+	autofocus_id: "64C905E53ADAE11E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_0_5"
@@ -10,14 +11,14 @@
 		{
 			dependencies: ["28CDC7E162EECD21"]
 			id: "70226C542DD7ECB3"
-			shape: "hexagon"
-			size: 3.0d
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "211CFD3464624359"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -28,329 +29,108 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1B20785F52E61318"]
-			id: "014BF36C85965AD0"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				count: 16L
-				id: "16747FDA78FADB40"
-				item: {
-					Count: 16b
-					id: "gtceu:red_alloy_ingot"
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["014BF36C85965AD0"]
-			id: "176830382EE72965"
-			tasks: [{
-				id: "03111C8B8F911635"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/wire_cutters"
-					}
-				}
-				type: "item"
-			}]
-			x: 6.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["176830382EE72965"]
+			dependencies: ["21F5F44D3B082230"]
 			id: "3AEC02CB597B7397"
 			tasks: [{
 				id: "14EC13A39CE0F8FC"
 				item: "minecraft:piston"
 				type: "item"
 			}]
-			x: 8.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3AEC02CB597B7397"]
+			dependencies: [
+				"3AEC02CB597B7397"
+				"70226C542DD7ECB3"
+			]
 			id: "6CCBD7B0D7A0EFB7"
-			shape: "hexagon"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "6F2A0FE4B11C23C3"
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: -7.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["3AEC02CB597B7397"]
-			id: "6DAB994DC8D69934"
-			tasks: [{
-				id: "42B26D64F9138F96"
-				item: "gtceu:lp_steam_macerator"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6DAB994DC8D69934"]
-			id: "7580F8753400A68A"
-			tasks: [
-				{
-					count: 16L
-					id: "6F7EDF53CD580768"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_lazurite"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "001A9A474E2A1616"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_sodalite"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "5649CA93DDA25A1E"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_lapis"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "77F7A2AE7EF4435D"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_calcite"
-					}
-					type: "item"
-				}
-			]
-			x: 10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["6DAB994DC8D69934"]
-			id: "750C7D369995E3EF"
-			tasks: [
-				{
-					count: 16L
-					id: "77F1A0CB80EDD172"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_basaltic_mineral_sand"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1CCA7B03E3A08404"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_granitic_mineral_sand"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1C7776A46943C9FD"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_fullers_earth"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1E7DC958CE1399D0"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_gypsum"
-					}
-					type: "item"
-				}
-			]
-			x: 12.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["6DAB994DC8D69934"]
-			id: "4A97123377C5E6F7"
-			tasks: [{
-				id: "6969E80C88D9EF19"
-				item: "gtceu:hp_steam_macerator"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6CCBD7B0D7A0EFB7"]
-			id: "5B0693E6C0EB0FC7"
-			tasks: [{
-				id: "3AEC3107F59D8572"
-				item: "gtceu:hp_steam_compressor"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3AEC02CB597B7397"]
+			dependencies: ["1B20785F52E61318"]
 			id: "103B5D0D93892D27"
 			tasks: [{
 				id: "06BC03FD15D15FC5"
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 2.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["103B5D0D93892D27"]
+			dependencies: [
+				"103B5D0D93892D27"
+				"70226C542DD7ECB3"
+			]
 			id: "7B6447613F8095C8"
-			shape: "hexagon"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "4F238B3C47AB3278"
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 5.0d
+			x: -7.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["7B6447613F8095C8"]
-			id: "2D4C81F84663DB90"
-			tasks: [{
-				id: "616A985F87C36DA4"
-				item: "gtceu:hp_steam_extractor"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["7B6447613F8095C8"]
-			id: "03DB070D9E674249"
-			tasks: [{
-				id: "1AD22DBE8E68D9EA"
-				item: "minecraft:anvil"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["03DB070D9E674249"]
+			dependencies: ["70226C542DD7ECB3"]
 			id: "645A2768054BC8AC"
-			shape: "hexagon"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "22C03CA90135F12B"
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: -7.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["645A2768054BC8AC"]
-			id: "266D821AA85DDB1C"
-			tasks: [{
-				id: "5442E18A00AD3CEB"
-				item: "gtceu:hp_steam_forge_hammer"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"70226C542DD7ECB3"
-				"645A2768054BC8AC"
-			]
+			dependencies: ["388E5264BE72C2BC"]
 			id: "5FE1A76C2BDEED5E"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.25d
 			tasks: [{
 				count: 16L
 				id: "64CFD4670850F38A"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: -10.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["70226C542DD7ECB3"]
-			id: "1942AF870185D77C"
-			tasks: [{
-				id: "3F2115E2222D1D0F"
-				title: "{gtep.tier_0_5.quests.1942AF870185D77C.tasks.3F2115E2222D1D0F.title}"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["1942AF870185D77C"]
+			dependencies: ["60E1850C5632AB2B"]
 			id: "20FD658A71932985"
 			tasks: [{
 				id: "7BDF43D92C3D71EF"
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -12.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["20FD658A71932985"]
-			id: "2A7397702B9D0363"
-			tasks: [{
-				id: "1549B6394BA3290B"
-				item: "gtceu:hp_steam_liquid_boiler"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["1942AF870185D77C"]
+			dependencies: ["60E1850C5632AB2B"]
 			id: "48E66E658D3E4472"
 			tasks: [{
 				id: "5A69B1BA3B6CF58A"
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["48E66E658D3E4472"]
-			id: "4E49CC317FB0328D"
-			tasks: [{
-				id: "24623887B393C838"
-				item: "gtceu:hp_steam_solar_boiler"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 5.5d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["70226C542DD7ECB3"]
@@ -360,19 +140,8 @@
 				item: "gtceu:lp_steam_furnace"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["30C546E0A5853BF4"]
-			id: "56FF4FFBBCF2707F"
-			tasks: [{
-				id: "26E44FEC6DD782C0"
-				item: "gtceu:hp_steam_furnace"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.5d
+			x: -10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5FE1A76C2BDEED5E"]
@@ -388,65 +157,32 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.5d
+			x: -7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5532CDCCA743CB82"]
 			id: "7B4F27D97A5A32FF"
-			tasks: [
-				{
-					count: 10L
-					id: "19DE49A6AAFC5960"
-					item: {
-						Count: 10b
-						id: "minecraft:obsidian"
-					}
-					type: "item"
-				}
-				{
-					dimension: "minecraft:the_nether"
-					id: "7AF74B63CE087D02"
-					type: "dimension"
-				}
-			]
-			x: 7.0d
-			y: 7.5d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "7AF74B63CE087D02"
+				type: "dimension"
+			}]
+			title: "{gtep.tier_0_5.quests.7B4F27D97A5A32FF.title}"
+			x: -5.0d
+			y: 6.0d
 		}
 		{
-			dependencies: [
-				"7B4F27D97A5A32FF"
-				"7B6447613F8095C8"
-			]
+			dependencies: ["7B4F27D97A5A32FF"]
+			icon: "gtceu:sulfur_dust"
 			id: "15A39DCDB0E14115"
-			tasks: [
-				{
-					count: 16L
-					id: "1F8D6720E0520D5D"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_sulfur"
-					}
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0FDA6BAF561BA338"
-					item: "gtceu:raw_pyrite"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "3F294926C97A97CB"
-					item: {
-						Count: 16b
-						id: "gtceu:raw_sphalerite"
-					}
-					type: "item"
-				}
-			]
-			x: 9.5d
-			y: 7.5d
+			tasks: [{
+				id: "7D023AD575D2857E"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7B6447613F8095C8"]
@@ -456,8 +192,8 @@
 				item: "gtceu:raw_rubber_dust"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -470,8 +206,8 @@
 				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.5d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5FE1A76C2BDEED5E"]
@@ -481,51 +217,77 @@
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["64C905E53ADAE11E"]
-			id: "69DF7086C5022C06"
-			tasks: [
-				{
-					count: 3L
-					id: "363E74A7A75C4652"
-					item: {
-						Count: 3b
-						id: "gtceu:red_alloy_single_cable"
-					}
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "58496A368DCF2E20"
-					item: {
-						Count: 7b
-						id: "gtceu:tin_single_cable"
-					}
-					type: "item"
-				}
-			]
-			x: 8.5d
-			y: 9.5d
+			x: -10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
 				"64C905E53ADAE11E"
-				"69DF7086C5022C06"
+				"7CEA9744A77D32F6"
 			]
-			id: "212346BFE19C01EE"
+			id: "69DF7086C5022C06"
 			tasks: [{
-				id: "417741E9E429C168"
-				item: "gtceu:lv_electric_motor"
+				count: 3L
+				id: "363E74A7A75C4652"
+				item: {
+					Count: 3b
+					id: "gtceu:red_alloy_single_cable"
+				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 13.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5FE1A76C2BDEED5E"]
+			icon: "gtceu:lv_electric_motor"
+			id: "212346BFE19C01EE"
+			tasks: [
+				{
+					id: "417741E9E429C168"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2DF2F842AF01ED9F"
+					item: {
+						Count: 2b
+						id: "gtceu:iron_rod"
+					}
+					type: "item"
+				}
+				{
+					id: "52259791DBE90F44"
+					item: "gtceu:magnetic_iron_rod"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1E666C066095C6BD"
+					item: {
+						Count: 2b
+						id: "gtceu:tin_single_cable"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "69C4F98031200342"
+					item: {
+						Count: 4b
+						id: "gtceu:copper_single_wire"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"{gtep.tier_0_5.quests.13171ABF71BFCCA9.description0}"
+				"{gtep.tier_0_5.quests.13171ABF71BFCCA9.description1}"
+			]
 			id: "13171ABF71BFCCA9"
 			tasks: [
 				{
@@ -534,34 +296,17 @@
 					type: "item"
 				}
 				{
-					id: "79EC1CE4080AE492"
-					item: "gtceu:ingot_casting_mold"
-					type: "item"
-				}
-				{
-					id: "0A81FDAB44045197"
-					item: "gtceu:nugget_casting_mold"
-					type: "item"
-				}
-				{
 					id: "05B54125EF7E922F"
 					item: "gtceu:ball_casting_mold"
 					type: "item"
 				}
-				{
-					id: "6804BFCB43E37EAB"
-					item: "gtceu:gear_casting_mold"
-					type: "item"
-				}
 			]
-			x: 2.5d
-			y: 9.5d
+			title: "{gtep.tier_0_5.quests.13171ABF71BFCCA9.title}"
+			x: -2.5d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"69DF7086C5022C06"
-				"13171ABF71BFCCA9"
-			]
+			dependencies: ["13171ABF71BFCCA9"]
 			id: "215AE1C0DE6E714D"
 			tasks: [{
 				count: 2L
@@ -569,37 +314,40 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"215AE1C0DE6E714D"
 				"569270FB614D0D7F"
 				"1E59C6ACC9E47140"
+				"69DF7086C5022C06"
 			]
 			id: "551EF642BEB77711"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "32BB008B94CACBF0"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 11.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["215AE1C0DE6E714D"]
+			dependencies: ["6CCBD7B0D7A0EFB7"]
 			id: "569270FB614D0D7F"
 			tasks: [{
 				id: "0D22EE108DCD3916"
 				item: "gtceu:resin_circuit_board"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 11.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["69DF7086C5022C06"]
+			dependencies: ["27A4D5673FC03DFC"]
 			id: "1E59C6ACC9E47140"
 			tasks: [{
 				count: 2L
@@ -610,64 +358,181 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 11.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"551EF642BEB77711"
 				"212346BFE19C01EE"
+				"7FFADF77A296B1C6"
 				"322C04682F75059F"
 			]
 			id: "35941049615A33DA"
-			shape: "hexagon"
-			size: 3.0d
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "1945892DF8CC67B0"
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 13.5d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["7FFADF77A296B1C6"]
+			icon: "gtceu:tin_rotor"
 			id: "322C04682F75059F"
-			tasks: [{
-				count: 2L
-				id: "38E604C487929746"
-				item: {
-					Count: 2b
-					id: "gtceu:tin_rotor"
+			tasks: [
+				{
+					id: "38E604C487929746"
+					item: "gtceu:tin_rotor"
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: 13.5d
+				{
+					count: 4L
+					id: "4BDE4B984267D0A0"
+					item: {
+						Count: 4b
+						id: "gtceu:tin_plate"
+					}
+					type: "item"
+				}
+				{
+					id: "5D0D187368CCE4C0"
+					item: "gtceu:tin_ring"
+					type: "item"
+				}
+				{
+					id: "6A1022C9D6D81A2A"
+					item: "gtceu:tin_screw"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1C7C1456D4D56203"]
 			id: "7FFADF77A296B1C6"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				id: "0104378DAA685794"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 13.5d
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5FE1A76C2BDEED5E"]
+			id: "6212A3E9ACCF9902"
+			tasks: [{
+				id: "49EB05D3258FAFDC"
+				title: "{gtep.tier_0_5.quests.6212A3E9ACCF9902.tasks.49EB05D3258FAFDC.title}"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"70226C542DD7ECB3"
+				"1195ADBBB1A42522"
+				"6CCBD7B0D7A0EFB7"
+			]
+			id: "388E5264BE72C2BC"
+			tasks: [
+				{
+					id: "0C6F5C19137A578A"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "28F842385C79D778"
+					item: {
+						Count: 32b
+						id: "gtceu:firebricks"
+					}
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"{gtep.tier_0_5.quests.1195ADBBB1A42522.description0}"
+				"{gtep.tier_0_5.quests.1195ADBBB1A42522.description1}"
+			]
+			id: "1195ADBBB1A42522"
+			tasks: [
+				{
+					count: 33L
+					id: "1B085FCB7B061797"
+					item: "gtceu:gypsum_dust"
+					type: "item"
+				}
+				{
+					count: 33L
+					id: "19CA525B73BA7D44"
+					item: "gtceu:calcite_dust"
+					type: "item"
+				}
+			]
+			title: "{gtep.tier_0_5.quests.1195ADBBB1A42522.title}"
+			x: -12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1B20785F52E61318"]
-			id: "6D95F620383CE0A3"
+			id: "21F5F44D3B082230"
 			tasks: [{
-				id: "290A37D9BFDB31BE"
-				item: "gtceu:hp_steam_alloy_smelter"
+				count: 16L
+				id: "1440628754D1F24A"
+				item: {
+					Count: 16b
+					id: "gtceu:red_alloy_ingot"
+				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.5d
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "27A4D5673FC03DFC"
+			tasks: [{
+				id: "10A2039FDDB9D28D"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21F5F44D3B082230"]
+			id: "7CEA9744A77D32F6"
+			tasks: [{
+				count: 3L
+				id: "7D77173053B7090D"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "60E1850C5632AB2B"
+			tasks: [{
+				id: "6D03ECEC2E4575B2"
+				title: "{gtep.tier_0_5.quests.60E1850C5632AB2B.tasks.6D03ECEC2E4575B2.title}"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: 0.0d
 		}
 	]
 	title: "{gtep.tier_0_5.title}"
