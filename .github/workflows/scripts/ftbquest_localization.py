@@ -13,6 +13,8 @@ QUEST_LOCALIZED_PATH.mkdir(exist_ok=True)
 QUEST_CHAPTERS_LOCALIZED_PATH = QUEST_LOCALIZED_PATH / 'chapters'
 QUEST_CHAPTERS_LOCALIZED_PATH.mkdir(exist_ok=True)
 
+LANG_FILE_PATH = Path('kubejs/assets/gtep_quests/lang')
+os.makedirs(LANG_FILE_PATH, exist_ok=True)
 SOURCE_LANGUAGE = 'zh_cn'
 
 PACK_SHORT_KEY = "gtep"
@@ -83,7 +85,7 @@ def main():
             with open(QUEST_CHAPTERS_LOCALIZED_PATH / file, 'w', encoding='utf-8') as f:
                 snbt.dump(localized_data, f)
 
-    with open(QUEST_LOCALIZED_PATH / f'{SOURCE_LANGUAGE}.json', 'w', encoding='utf-8') as f:
+    with open(LANG_FILE_PATH / f'{SOURCE_LANGUAGE}.json', 'w', encoding='utf-8') as f:
         json.dump(SOURCE_KEYS, f, ensure_ascii=False, indent=4)
 
 
