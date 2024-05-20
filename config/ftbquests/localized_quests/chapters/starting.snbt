@@ -16,7 +16,7 @@
 			]
 			id: "6D5269B19694E694"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			subtitle: "{gtep.starting.quests.6D5269B19694E694.subtitle}"
 			tasks: [{
 				count: 8L
@@ -142,14 +142,14 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7DA6176867C08174"]
 			id: "54F6844ACFB0416D"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				id: "058B1F3947CAC40A"
 				item: "minecraft:crafting_table"
@@ -197,25 +197,26 @@
 			dependencies: ["281DD593271A5D31"]
 			id: "67A9D6622A0E6D34"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				id: "58B6EE5319B73C65"
 				item: {
 					Count: 1b
-					id: "tetra:modular_double"
+					id: "itemfilters:weak_nbt"
 					tag: {
-						Damage: 0
-						HideFlags: 1
-						"double/basic_hammer_left_material": "basic_hammer/flint"
-						"double/basic_hammer_right_material": "basic_hammer/flint"
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_left:workable": 1
-						"double/head_right": "double/basic_hammer_right"
-						"double/head_right:workable": 1
-						honing_progress: 203
-						id: "a52be242-81dd-4d77-96a0-db79dd842066"
+						value: {
+							Damage: 0
+							HideFlags: 1
+							"double/basic_hammer_left_material": "basic_hammer/flint"
+							"double/basic_hammer_right_material": "basic_hammer/flint"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_left:workable": 1
+							"double/head_right": "double/basic_hammer_right"
+							"double/head_right:workable": 1
+							honing_progress: 203
+						}
 					}
 				}
 				type: "item"
@@ -234,20 +235,24 @@
 				id: "63056F37F17D880F"
 				item: {
 					Count: 1b
-					id: "tetra:modular_double"
+					id: "itemfilters:weak_nbt"
 					tag: {
-						Damage: 0
-						HideFlags: 1
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/basic_pickaxe_left_material": "basic_pickaxe/flint"
-						"double/basic_pickaxe_right_material": "basic_pickaxe/flint"
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_pickaxe_left"
-						"double/head_left:workable": 1
-						"double/head_right": "double/basic_pickaxe_right"
-						"double/head_right:workable": 1
-						honing_progress: 203
-						id: "da9eed8b-ca10-444d-96bd-178a322323bf"
+						value: {
+							Damage: 0
+							HideFlags: 1
+							"double/basic_hammer_left_material": "basic_hammer/flint"
+							"double/basic_hammer_right_material": "basic_hammer/flint"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/handle/settle_progress": 239
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_left/settle_progress": 266
+							"double/head_left:workable": 1
+							"double/head_right": "double/basic_hammer_right"
+							"double/head_right/settle_progress": 266
+							"double/head_right:workable": 1
+							honing_progress: 163
+						}
 					}
 				}
 				type: "item"
@@ -259,7 +264,7 @@
 			dependencies: ["131CA3DB5A3A14B8"]
 			id: "3F06C99F47B97EF5"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "2CFB9F48264201B5"
@@ -280,24 +285,24 @@
 				id: "7EB8A24F150874FC"
 				item: {
 					Count: 1b
-					id: "tetra:modular_double"
+					id: "itemfilters:weak_nbt"
 					tag: {
-						Damage: 0
-						HideFlags: 1
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
-						"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
-						"double/handle": "double/basic_handle"
-						"double/handle/settle_progress": 268
-						"double/head_left": "double/basic_pickaxe_left"
-						"double/head_right": "double/basic_pickaxe_right"
-						honing_progress: 275
-						id: "87a67b74-fda2-4ed7-baaf-990091b84d6c"
+						value: {
+							Damage: 0
+							HideFlags: 1
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
+							"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_pickaxe_left"
+							"double/head_right": "double/basic_pickaxe_right"
+							honing_progress: 290
+						}
 					}
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 5.0d
 		}
 		{
@@ -309,7 +314,7 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: 5.0d
 		}
 		{
@@ -334,13 +339,13 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6496614627BB6364"]
 			id: "1394C1CC546A6931"
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				id: "3B8D556614CD17FD"
 				item: {
@@ -353,7 +358,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["{gtep.starting.subtitle0}"]

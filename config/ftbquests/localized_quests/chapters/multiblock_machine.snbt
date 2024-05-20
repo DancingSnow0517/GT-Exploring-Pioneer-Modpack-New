@@ -11,7 +11,7 @@
 			dependencies: ["70226C542DD7ECB3"]
 			id: "3B0B7A22C6C04008"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [
 				{
 					id: "45ADEAFFC84C35DA"
@@ -35,7 +35,7 @@
 			dependencies: ["3B0B7A22C6C04008"]
 			id: "668CFC9B3A40FB8A"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [
 				{
 					id: "37C907E34B39EFAF"
