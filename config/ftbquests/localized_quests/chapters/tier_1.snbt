@@ -9,8 +9,8 @@
 	quests: [{
 		dependencies: ["35941049615A33DA"]
 		id: "294325B9A238CC5E"
-		shape: "hexagon"
-		size: 3.0d
+		shape: "gear"
+		size: 2.0d
 		tasks: [{
 			id: "0BA599BD72810CE2"
 			item: "gtceu:lv_steam_turbine"

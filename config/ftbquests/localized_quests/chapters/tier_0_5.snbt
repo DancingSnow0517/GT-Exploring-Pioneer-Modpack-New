@@ -100,7 +100,7 @@
 			dependencies: ["388E5264BE72C2BC"]
 			id: "5FE1A76C2BDEED5E"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "64CFD4670850F38A"
