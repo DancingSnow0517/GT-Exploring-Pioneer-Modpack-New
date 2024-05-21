@@ -1,6 +1,6 @@
 ModernUI/
 jade/
-jei/
+jei/**
 sound_physics_remastered/
 world_preview/
 
@@ -23,4 +23,5 @@ solonion-client.json
 !aether-client.toml
 !pickupnotifier/pickupnotifier-client.toml
 !inventorysorter-client.toml
+!jei/jei-client.ini
 !jeiintegration-client.toml
