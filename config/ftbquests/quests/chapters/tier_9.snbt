@@ -1,4 +1,5 @@
 {
+	autofocus_id: "057AEB8E9A7FB427"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_9"
@@ -6,6 +7,19 @@
 	id: "448B1EB11DC9DE66"
 	order_index: 11
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["45B1379EF1CF3AE8"]
+		id: "057AEB8E9A7FB427"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "1BA0739C090AD2D3"
+			item: "gtceu:uhv_machine_hull"
+			type: "item"
+		}]
+		title: "欢迎来到第9阶段 - UHV"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "&4Tier 9 - 极高压（UHV）"
 }

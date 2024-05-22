@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2479A4770E8F963E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_6"
@@ -6,6 +7,32 @@
 	id: "580175CB9D0D264B"
 	order_index: 8
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["41E7CE5DA02E8C3E"]
+			id: "2479A4770E8F963E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "16F68B3FDB15E2F2"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "欢迎来到第6阶段 - LuV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2479A4770E8F963E"]
+			id: "557559CBFD6727B2"
+			tasks: [{
+				id: "2CAFA040A80EB78E"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "&dTier 6 - 剧差压（LuV）"
 }

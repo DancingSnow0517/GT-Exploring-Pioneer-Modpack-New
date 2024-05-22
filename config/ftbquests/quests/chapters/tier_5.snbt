@@ -1,4 +1,5 @@
 {
+	autofocus_id: "229C8E359FA1D48E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_5"
@@ -6,6 +7,32 @@
 	id: "18B0B7C318E783AB"
 	order_index: 7
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["4B8720F7322C45AF"]
+			id: "229C8E359FA1D48E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2EA92EE9D4557BA4"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			title: "欢迎来到第5阶段 - IV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["229C8E359FA1D48E"]
+			id: "41E7CE5DA02E8C3E"
+			tasks: [{
+				id: "22D9D3374A907718"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "&9Tier 5 - 强导压（IV）"
 }

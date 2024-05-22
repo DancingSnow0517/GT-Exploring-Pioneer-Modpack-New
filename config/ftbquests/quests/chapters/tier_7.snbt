@@ -1,4 +1,5 @@
 {
+	autofocus_id: "51E65AE640127BA0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_7"
@@ -6,6 +7,32 @@
 	id: "100D8C42EF330444"
 	order_index: 9
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["557559CBFD6727B2"]
+			id: "51E65AE640127BA0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5CDF8397ED860D6B"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			title: "欢迎来到第7阶段 - ZPM"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51E65AE640127BA0"]
+			id: "4E52D2632D3D1895"
+			tasks: [{
+				id: "2CE907933C9F4D51"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "&cTier 7 - 零点压（ZPM）"
 }

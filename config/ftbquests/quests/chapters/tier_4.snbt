@@ -1,4 +1,5 @@
 {
+	autofocus_id: "72D93E31398E6D81"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_4"
@@ -6,6 +7,32 @@
 	id: "6DC6A1711CA910DD"
 	order_index: 6
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["57ABC2BB78EDA45E"]
+			id: "72D93E31398E6D81"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "221A15E54C1BC485"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			title: "欢迎来到第4阶段 - EV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72D93E31398E6D81"]
+			id: "4B8720F7322C45AF"
+			tasks: [{
+				id: "7063ECE64977D43D"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "&5Tier 4 - 超高压（EV）"
 }

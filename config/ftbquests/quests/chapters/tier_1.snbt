@@ -1,4 +1,5 @@
 {
+	autofocus_id: "294325B9A238CC5E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_1"
@@ -6,18 +7,880 @@
 	id: "69DDDA155F44BAEA"
 	order_index: 3
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["35941049615A33DA"]
-		id: "294325B9A238CC5E"
-		shape: "gear"
-		size: 2.0d
-		tasks: [{
-			id: "0BA599BD72810CE2"
-			item: "gtceu:lv_steam_turbine"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["35941049615A33DA"]
+			id: "294325B9A238CC5E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0BA599BD72810CE2"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "欢迎来到第1阶段 - LV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "7DD93227D709C623"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0625D205693A7BDB"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "6A33FF69927AC3DE"
+			tasks: [{
+				id: "734110069EB0AA72"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "4E49A99BEC3108E3"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2A28D1F86C7825B7"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "272C6CAEB8B5D52A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7DE3EB5E9C696059"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["272C6CAEB8B5D52A"]
+			id: "694B6681BA7E44C2"
+			tasks: [{
+				id: "34DCC2F29CDEC2C5"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"272C6CAEB8B5D52A"
+				"75515764CFE7B082"
+			]
+			id: "7F2E2B9141777074"
+			tasks: [{
+				id: "27C6D54C275A4D1C"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["694B6681BA7E44C2"]
+			id: "3477144954E42D80"
+			tasks: [{
+				id: "13D6010D22797C27"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3477144954E42D80"
+				"29E4AE8C695D7DC0"
+			]
+			id: "75515764CFE7B082"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4EE85E7CF6AE86EF"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["080A466AE565E055"]
+			id: "29E4AE8C695D7DC0"
+			tasks: [{
+				id: "63EB08ED117E2557"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1D31542D80034CA2"]
+			id: "080A466AE565E055"
+			tasks: [{
+				id: "0091E2E32CBF474A"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60FC1907DAC230E5"]
+			id: "1D31542D80034CA2"
+			tasks: [
+				{
+					id: "39F04622338B165A"
+					item: "gtceu:arsenic_dust"
+					type: "item"
+				}
+				{
+					id: "6DCA75A59486BCF0"
+					item: "gtceu:gallium_dust"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "60FC1907DAC230E5"
+			tasks: [{
+				id: "4254622118FA1C88"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "3F0679B2AF4C0D49"
+			tasks: [{
+				id: "7A8037FCD27EFF52"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "4F054CC22FAE39A5"
+			tasks: [{
+				id: "45F37283D0AB2449"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "53E9344D6F395F01"
+			tasks: [{
+				id: "7DAFA35D14501636"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "0A1DE301BA9A88C8"
+			tasks: [{
+				id: "7D4A6C9D0D7B5ACF"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "7C43D1ED5EA277B0"
+			tasks: [{
+				id: "21E34ADAA57139B4"
+				item: "gtceu:lv_forming_press"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "0E46E6424D57E2B9"
+			tasks: [{
+				id: "59A549AF016A5379"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "6DA76278DE179A44"
+			tasks: [{
+				id: "5CE285ED7451CE57"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6A33FF69927AC3DE"]
+			id: "30AF5A31951BDA2D"
+			tasks: [{
+				id: "5B9C393AC3C4C216"
+				item: "gtceu:cobalt_brass_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30AF5A31951BDA2D"]
+			id: "4AC24A810E318730"
+			tasks: [{
+				id: "315A9D5DB55AA487"
+				item: "gtceu:cobalt_brass_buzz_saw_blade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4AC24A810E318730"]
+			id: "4D3187100E055208"
+			tasks: [{
+				id: "398873149B71A088"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "75A400C65FEFF6BC"
+			tasks: [{
+				id: "7161F86ECEE87C22"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6A33FF69927AC3DE"
+				"75A400C65FEFF6BC"
+			]
+			id: "3B25B0C9A91E4958"
+			tasks: [{
+				id: "0B33D24DACFD6A52"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75A400C65FEFF6BC"]
+			icon: "gtceu:oil_medium_bucket"
+			id: "3814A412C2C85C24"
+			tasks: [{
+				id: "537D919D0604AD95"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3814A412C2C85C24"]
+			id: "1DAEAF643A41822A"
+			tasks: [{
+				id: "7E022FAFBE14A8CA"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75A400C65FEFF6BC"]
+			id: "2BEB5A2E0CABC308"
+			tasks: [{
+				count: 2L
+				id: "3991A21F86F32F57"
+				item: { Count: 2b, id: "gtceu:lv_brewery" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1DAEAF643A41822A"
+				"2BEB5A2E0CABC308"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:lubricant"
+					}
+				}
+			}
+			id: "29423C558660684A"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:lubricant"
+						}
+					}
+				}
+				id: "4ACF2AFB82A66E40"
+				item: {
+					Count: 2b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:lubricant"
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1DAEAF643A41822A"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfuric_gas"
+					}
+				}
+			}
+			id: "78039C6FFFF96086"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sulfuric_gas"
+						}
+					}
+				}
+				id: "19EC3D6E006BCB6B"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sulfuric_gas"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DAEAF643A41822A"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfuric_naphtha"
+					}
+				}
+			}
+			id: "25C99E1490D17326"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sulfuric_naphtha"
+						}
+					}
+				}
+				id: "456B0A4997A844CB"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sulfuric_naphtha"
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DAEAF643A41822A"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfuric_light_fuel"
+					}
+				}
+			}
+			id: "0AB5D2801EBD72C2"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sulfuric_light_fuel"
+						}
+					}
+				}
+				id: "66482348964B7B20"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sulfuric_light_fuel"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DAEAF643A41822A"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfuric_heavy_fuel"
+					}
+				}
+			}
+			id: "0EE313A3022B7978"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sulfuric_heavy_fuel"
+						}
+					}
+				}
+				id: "19FE1F82C3E4D8FC"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sulfuric_heavy_fuel"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["78039C6FFFF96086"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:refinery_gas"
+					}
+				}
+			}
+			id: "4F690B95BF7A7A45"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:refinery_gas"
+						}
+					}
+				}
+				id: "0633FD08C14F6243"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:refinery_gas"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["25C99E1490D17326"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:naphtha"
+					}
+				}
+			}
+			id: "495A01F179D5AB2A"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:naphtha"
+						}
+					}
+				}
+				id: "5B50DDAB54CC2A68"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:naphtha"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0AB5D2801EBD72C2"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:light_fuel"
+					}
+				}
+			}
+			id: "539A9713B6562CAC"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:light_fuel"
+						}
+					}
+				}
+				id: "342667B2D0103D5F"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:light_fuel"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0EE313A3022B7978"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:heavy_fuel"
+					}
+				}
+			}
+			id: "44F6C789BF72051C"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:heavy_fuel"
+						}
+					}
+				}
+				id: "6D30CA1B985B94AA"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:heavy_fuel"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3814A412C2C85C24"]
+			id: "302CF2489AFA8017"
+			tasks: [
+				{
+					count: 64L
+					id: "05686BABB30C22A7"
+					item: { Count: 64b, id: "gtceu:long_distance_fluid_pipeline" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7BA3467BA32A2985"
+					item: { Count: 2b, id: "gtceu:long_distance_fluid_pipeline_endpoint" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 5.0d
+		}
+	]
 	title: "&1Tier 1 - 低压（LV）"
 }
