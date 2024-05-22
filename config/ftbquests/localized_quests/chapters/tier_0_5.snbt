@@ -4,6 +4,13 @@
 	default_quest_shape: ""
 	filename: "tier_0_5"
 	group: ""
+	icon: {
+		Count: 1b
+		id: "minecraft:flint_and_steel"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "663F94D0D8C41098"
 	order_index: 2
 	quest_links: [ ]

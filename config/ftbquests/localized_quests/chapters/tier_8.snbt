@@ -1,4 +1,5 @@
 {
+	autofocus_id: "167CBE420EA9190B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tier_8"
@@ -6,6 +7,32 @@
 	id: "135973AD1B5A8711"
 	order_index: 10
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["4E52D2632D3D1895"]
+			id: "167CBE420EA9190B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7C279EFEC129F2C8"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			title: "{gtep.tier_8.quests.167CBE420EA9190B.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["167CBE420EA9190B"]
+			id: "45B1379EF1CF3AE8"
+			tasks: [{
+				id: "5A7AE2B332A299E5"
+				item: "gtceu:cosmic_neutronium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "{gtep.tier_8.title}"
 }
