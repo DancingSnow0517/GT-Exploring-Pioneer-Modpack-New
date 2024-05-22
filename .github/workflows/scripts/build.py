@@ -69,7 +69,7 @@ def main():
 
     shutil.copytree('config', 'build/overrides/config')
     shutil.copytree('kubejs', 'build/overrides/kubejs')
-    shutil.copytree('local', 'build/overrides/local')
+    shutil.copytree('defaultconfigs', 'build/overrides/defaultconfigs')
 
     # 替换任务书为本地键的版本
     shutil.copytree(
