@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
+	default_quest_size: 1.5d
 	filename: "multiblock_machine"
 	group: ""
 	id: "44A43F3FD5456580"
@@ -10,8 +11,6 @@
 		{
 			dependencies: ["70226C542DD7ECB3"]
 			id: "3B0B7A22C6C04008"
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [
 				{
 					id: "45ADEAFFC84C35DA"
@@ -34,8 +33,6 @@
 		{
 			dependencies: ["3B0B7A22C6C04008"]
 			id: "668CFC9B3A40FB8A"
-			shape: "hexagon"
-			size: 1.5d
 			tasks: [
 				{
 					id: "37C907E34B39EFAF"
@@ -72,6 +69,183 @@
 			]
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			icon: "gtceu:electric_blast_furnace"
+			id: "6B90487E016BA4EE"
+			tasks: [
+				{
+					id: "37180CAFF16FF772"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "53EB1425B464C355"
+					item: {
+						Count: 11b
+						id: "gtceu:heatproof_machine_casing"
+					}
+					type: "item"
+				}
+				{
+					id: "16A87F7D4F0D9A1D"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "7D22BEACE8293412"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "1D1B24326589B7C6"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "7831D76E2E711652"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7782BA323FFC6E23"
+					item: {
+						Count: 2b
+						id: "gtceu:lv_energy_input_hatch"
+					}
+					type: "item"
+				}
+				{
+					id: "0FEB66E78B48D5C2"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "23B05FD722594E0D"
+					item: {
+						Count: 64b
+						id: "gtceu:cupronickel_double_wire"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6942A2A2EB4D9D0E"
+					item: {
+						Count: 16b
+						id: "gtceu:cupronickel_coil_block"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6B90487E016BA4EE"]
+			id: "40CA67379CEA6845"
+			tasks: [{
+				count: 16L
+				id: "01D86DB17E44E3BA"
+				item: {
+					Count: 16b
+					id: "gtceu:kanthal_coil_block"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40CA67379CEA6845"]
+			id: "5D217578AB4356F7"
+			tasks: [{
+				count: 16L
+				id: "5F726AAD4223A26E"
+				item: {
+					Count: 16b
+					id: "gtceu:nichrome_coil_block"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5D217578AB4356F7"]
+			id: "012D1D7483607C54"
+			tasks: [{
+				count: 16L
+				id: "38F6900DC4BB08E6"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["012D1D7483607C54"]
+			id: "18313556A8D86D85"
+			tasks: [{
+				count: 16L
+				id: "69A92FF0E7F10423"
+				item: {
+					Count: 16b
+					id: "gtceu:hssg_coil_block"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["18313556A8D86D85"]
+			id: "779264E6F3AD447E"
+			tasks: [{
+				count: 16L
+				id: "1B9A5C593FA1937F"
+				item: {
+					Count: 16b
+					id: "gtceu:naquadah_coil_block"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["779264E6F3AD447E"]
+			id: "2284266F629069A0"
+			tasks: [{
+				count: 16L
+				id: "436322848E12F6B9"
+				item: {
+					Count: 16b
+					id: "gtceu:trinium_coil_block"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2284266F629069A0"]
+			id: "3D60FD5CF8838DC8"
+			tasks: [{
+				count: 16L
+				id: "5D921ECA8B78983A"
+				item: {
+					Count: 16b
+					id: "gtceu:tritanium_coil_block"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
 		}
 	]
 	title: "{gtep.multiblock_machine.title}"
