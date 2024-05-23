@@ -86,7 +86,7 @@ def main():
                 snbt.dump(localized_data, f)
 
     with open(LANG_FILE_PATH / f'{SOURCE_LANGUAGE}.json', 'w', encoding='utf-8') as f:
-        json.dump(SOURCE_KEYS, f, ensure_ascii=False, indent=4)
+        json.dump(dict(sorted(SOURCE_KEYS.items())), f, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
