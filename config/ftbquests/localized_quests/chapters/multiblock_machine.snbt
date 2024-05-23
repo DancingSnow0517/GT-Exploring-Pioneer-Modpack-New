@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["70226C542DD7ECB3"]
+			icon: "gtceu:primitive_blast_furnace"
 			id: "3B0B7A22C6C04008"
 			tasks: [
 				{
@@ -32,6 +33,7 @@
 		}
 		{
 			dependencies: ["3B0B7A22C6C04008"]
+			icon: "gtceu:large_primitive_blast_furnace"
 			id: "668CFC9B3A40FB8A"
 			tasks: [
 				{
@@ -146,7 +148,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6B90487E016BA4EE"]
+			dependencies: [
+				"6B90487E016BA4EE"
+				"2D0EEDEADE28DBC9"
+			]
 			id: "40CA67379CEA6845"
 			tasks: [{
 				count: 16L
@@ -246,6 +251,28 @@
 			}]
 			x: 2.5d
 			y: 10.0d
+		}
+		{
+			icon: "gtceu:vacuum_freezer"
+			id: "2D0EEDEADE28DBC9"
+			tasks: [
+				{
+					id: "24B9C08DFCEE4C49"
+					item: "gtceu:vacuum_freezer"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "168AC0245C2CADB0"
+					item: {
+						Count: 22b
+						id: "gtceu:frostproof_machine_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
 		}
 	]
 	title: "{gtep.multiblock_machine.title}"

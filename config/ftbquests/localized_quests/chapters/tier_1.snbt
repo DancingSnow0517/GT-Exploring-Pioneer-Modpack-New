@@ -87,6 +87,7 @@
 			dependencies: [
 				"272C6CAEB8B5D52A"
 				"75515764CFE7B082"
+				"376614CDD78833D6"
 			]
 			id: "7F2E2B9141777074"
 			tasks: [{
@@ -98,7 +99,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["694B6681BA7E44C2"]
+			dependencies: [
+				"694B6681BA7E44C2"
+				"74BA439F6ED66324"
+			]
 			id: "3477144954E42D80"
 			tasks: [{
 				id: "13D6010D22797C27"
@@ -144,7 +148,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["60FC1907DAC230E5"]
@@ -161,8 +165,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 0.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["294325B9A238CC5E"]
@@ -172,8 +176,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4E49A99BEC3108E3"]
@@ -216,8 +220,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.0d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4E49A99BEC3108E3"]
@@ -238,8 +242,8 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4E49A99BEC3108E3"]
@@ -249,8 +253,8 @@
 				item: "gtceu:lv_rock_crusher"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6A33FF69927AC3DE"]
@@ -277,6 +281,8 @@
 		{
 			dependencies: ["4AC24A810E318730"]
 			id: "4D3187100E055208"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "398873149B71A088"
 				item: "gtceu:lv_cutter"
@@ -866,6 +872,7 @@
 		}
 		{
 			dependencies: ["3814A412C2C85C24"]
+			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
 			id: "302CF2489AFA8017"
 			tasks: [
 				{
@@ -934,7 +941,7 @@
 				}
 			]
 			x: -1.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5E1C7BEA025E912E"]
@@ -949,7 +956,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -967,7 +974,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -985,7 +992,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["50367C949B45FC3D"]
@@ -996,7 +1003,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5711DA8E01CF1D2E"]
@@ -1011,7 +1018,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5711DA8E01CF1D2E"]
@@ -1026,7 +1033,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5711DA8E01CF1D2E"]
@@ -1041,7 +1048,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0C10A8A9EB089007"]
@@ -1052,7 +1059,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["248047564692BCEB"]
@@ -1063,7 +1070,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6FB0A93B1C157C5A"]
@@ -1074,7 +1081,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7F9553E032CF85C4"]
@@ -1085,7 +1092,418 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"294325B9A238CC5E"
+				"7B4F27D97A5A32FF"
+			]
+			id: "223C22F5F6FEE7B3"
+			tasks: [
+				{
+					count: 16L
+					id: "580E9396B12A12DD"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_quartzite"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "750FFA5AD8102AE4"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_nether_quartz"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223C22F5F6FEE7B3"]
+			id: "55ABCA6F2AE16365"
+			tasks: [{
+				count: 16L
+				id: "5CE8F5559FD13EFE"
+				item: {
+					Count: 16b
+					id: "gtceu:quartzite_gem"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55ABCA6F2AE16365"]
+			id: "376614CDD78833D6"
+			tasks: [{
+				id: "26FA6DC1CC66A690"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55ABCA6F2AE16365"]
+			id: "2BEFDAA7CA22C396"
+			tasks: [{
+				id: "27A8FFCF5023DBD6"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BEFDAA7CA22C396"]
+			id: "531B0DB02ED8D2C1"
+			tasks: [{
+				id: "1ED6572A7B179FB0"
+				item: "gtceu:lv_miner"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BEFDAA7CA22C396"]
+			id: "3416A93A8E27C327"
+			tasks: [{
+				id: "5FF6F21FF10AC959"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["531B0DB02ED8D2C1"]
+			icon: "gtceu:long_distance_item_pipeline_endpoint"
+			id: "5B19473DE3952A43"
+			tasks: [
+				{
+					count: 2L
+					id: "10669E517303A9CF"
+					item: {
+						Count: 2b
+						id: "gtceu:long_distance_item_pipeline_endpoint"
+					}
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "07E5EB2475D04D48"
+					item: {
+						Count: 64b
+						id: "gtceu:long_distance_item_pipeline"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4D3187100E055208"]
+			icon: "ironchest:diamond_chest"
+			id: "1EB537341FE425E4"
+			tasks: [
+				{
+					count: 9L
+					id: "48D4E6D391C3A57D"
+					item: {
+						Count: 9b
+						id: "gtceu:diamond_plate"
+					}
+					type: "item"
+				}
+				{
+					id: "1F649F62614B2030"
+					item: "ironchest:diamond_chest"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4E49A99BEC3108E3"]
+			id: "15335258B8308DF4"
+			tasks: [{
+				id: "6BC52199FA4CA2A9"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E46E6424D57E2B9"]
+			icon: "gtceu:fluid_cell"
+			id: "24689178C2DEFDDC"
+			tasks: [
+				{
+					count: 32L
+					id: "66F710A34FB2F1E0"
+					item: {
+						Count: 32b
+						id: "gtceu:tin_plate"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "27830FD704E0C599"
+					item: {
+						Count: 16b
+						id: "gtceu:fluid_cell"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E46E6424D57E2B9"]
+			id: "7FBF5FEA6A5ABC04"
+			tasks: [{
+				id: "775BA4F9B42E25A5"
+				item: "gtceu:steel_fluid_cell"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "35854EBC2E959028"
+			tasks: [
+				{
+					count: 16L
+					id: "1D0FD093ADF58DE0"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_mica"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6D849DF17E6DF9FA"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_kyanite"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6654A4E3BB1EB9CF"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_pollucite"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "06FCEADF173CC75D"
+					item: {
+						Count: 16b
+						id: "gtceu:raw_cassiterite"
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "31D28B3F598FFDE4"
+			tasks: [{
+				id: "69B57BE96B223DD5"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "708608CD239DD2E2"
+			tasks: [{
+				id: "2892BECF9359B162"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35941049615A33DA"]
+			id: "1779FADBC6E1BE4F"
+			tasks: [{
+				id: "26F649F99860E23D"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1779FADBC6E1BE4F"
+				"35941049615A33DA"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:nitrogen"
+					}
+				}
+			}
+			id: "189557328326B875"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:nitrogen"
+						}
+					}
+				}
+				id: "6D0B2AEC4748CFA3"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:nitrogen"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1779FADBC6E1BE4F"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:glue"
+					}
+				}
+			}
+			id: "74BA439F6ED66324"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:glue"
+						}
+					}
+				}
+				id: "4CB8DF7696A2949C"
+				item: {
+					Count: 1b
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:nitrogen"
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1779FADBC6E1BE4F"]
+			id: "73CF620A8C55D049"
+			tasks: [{
+				count: 128L
+				id: "54D3B74912ED6A34"
+				item: {
+					Count: 64b
+					id: "gtceu:raw_oilsands"
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1779FADBC6E1BE4F"]
+			id: "19862BB5AAE4AC8A"
+			tasks: [{
+				count: 16L
+				id: "01558527D25EE617"
+				item: {
+					Count: 16b
+					id: "gtceu:vanadium_steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
 		}
 	]
 	title: "{gtep.tier_1.title}"
