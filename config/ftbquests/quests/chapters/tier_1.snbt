@@ -892,6 +892,165 @@
 			x: 5.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "5E1C7BEA025E912E"
+			tasks: [
+				{
+					count: 64L
+					id: "41C0B3D21A9499B0"
+					item: { Count: 64b, id: "gtceu:raw_tetrahedrite" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3910540DB1FEC134"
+					item: { Count: 32b, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7B9E8F141577241A"
+					item: { Count: 16b, id: "gtceu:raw_stibnite" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E1C7BEA025E912E"]
+			id: "56E383BC50BF9920"
+			tasks: [{
+				count: 16L
+				id: "7798242998B71C65"
+				item: { Count: 16b, id: "gtceu:antimony_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5E1C7BEA025E912E"
+				"7A782998021A329B"
+			]
+			id: "08A15E2B34304689"
+			tasks: [{
+				count: 16L
+				id: "4C4BCAE287D8C9A3"
+				item: { Count: 16b, id: "gtceu:lead_ingot" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"56E383BC50BF9920"
+				"08A15E2B34304689"
+			]
+			id: "50367C949B45FC3D"
+			tasks: [{
+				count: 32L
+				id: "2D132BD450250735"
+				item: { Count: 32b, id: "gtceu:battery_alloy_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["50367C949B45FC3D"]
+			id: "7F9553E032CF85C4"
+			tasks: [{
+				id: "284FA218814FE356"
+				item: "gtceu:lv_battery_hull"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5711DA8E01CF1D2E"]
+			id: "0C10A8A9EB089007"
+			tasks: [{
+				count: 2L
+				id: "4599182C5B4BF1D9"
+				item: { Count: 2b, id: "gtceu:lithium_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5711DA8E01CF1D2E"]
+			id: "248047564692BCEB"
+			tasks: [{
+				count: 2L
+				id: "20AB24FBF47D6ECA"
+				item: { Count: 2b, id: "gtceu:sodium_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5711DA8E01CF1D2E"]
+			id: "6FB0A93B1C157C5A"
+			tasks: [{
+				count: 2L
+				id: "209EB8E5BEDEF110"
+				item: { Count: 2b, id: "gtceu:cadmium_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C10A8A9EB089007"]
+			id: "4C808358FD393E04"
+			tasks: [{
+				id: "76B42B9773A3541A"
+				item: "gtceu:lv_lithium_battery"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["248047564692BCEB"]
+			id: "5E4FA34ADF7B2352"
+			tasks: [{
+				id: "275EF20342C03D60"
+				item: "gtceu:lv_sodium_battery"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FB0A93B1C157C5A"]
+			id: "1EB0FC87DDBA6DF4"
+			tasks: [{
+				id: "65BD09E796C4D42E"
+				item: "gtceu:lv_cadmium_battery"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F9553E032CF85C4"]
+			id: "5711DA8E01CF1D2E"
+			tasks: [{
+				id: "40347473495B5E1E"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
 	]
 	title: "&1Tier 1 - 低压（LV）"
 }

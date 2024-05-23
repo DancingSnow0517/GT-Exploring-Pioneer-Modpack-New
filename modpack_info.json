@@ -4,10 +4,6 @@
   "version": "0.1",
   "files": [
     {
-      "filename": "gtceu-1.20.1-1.2.2.a-build_695.jar",
-      "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/1.20.1-1.2.2.a-build_695/gtceu-1.20.1-1.2.2.a-build_695.jar"
-    },
-    {
       "filename": "epimorphism-1.20.1-1.0.1-build_30.jar",
       "url": "https://github.com/EpimorphicPioneers/Epimorphism-Modern/releases/download/1.20.1-1.0.1-build_30/epimorphism-1.20.1-1.0.1-build_30.jar"
     },
