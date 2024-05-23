@@ -881,6 +881,17 @@
 			x: -2.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["694B6681BA7E44C2"]
+			id: "4EF12AFCE6F65EAA"
+			tasks: [{
+				id: "42A6A0C4F5D1E4AB"
+				item: "kubejs:twilight_crystal"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
 	]
 	title: "&1Tier 1 - 低压（LV）"
 }
