@@ -1,11 +1,221 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
+	default_quest_size: 0.75d
 	filename: "generate_electricity"
 	group: ""
 	id: "5AF0605AEEE27149"
 	order_index: 13
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "4E0835F8566DF3F9"
+			tasks: [{
+				id: "199A849B10A755E7"
+				item: "gtceu:solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E0835F8566DF3F9"]
+			id: "309AB67DAC438E1C"
+			tasks: [{
+				id: "1D75E9FFC067C0CC"
+				item: "gtceu:ulv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["309AB67DAC438E1C"]
+			id: "1458B3F93A63CD8E"
+			tasks: [{
+				id: "136DA04CE310EEDC"
+				item: "gtceu:lv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1458B3F93A63CD8E"]
+			id: "4DCBDC8CA7C01ED4"
+			tasks: [{
+				id: "2723DB7BDBE8A1AB"
+				item: "gtceu:mv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DCBDC8CA7C01ED4"]
+			id: "3A15020D62A95345"
+			tasks: [{
+				id: "5A4DEFD450E34436"
+				item: "gtceu:hv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3A15020D62A95345"]
+			id: "2AE6A6866FA02BC7"
+			tasks: [{
+				id: "4EC5656E5FF5F27B"
+				item: "gtceu:ev_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2AE6A6866FA02BC7"]
+			id: "4FD1D29E40CB024D"
+			tasks: [{
+				id: "6B067AF8A4FD9FBE"
+				item: "gtceu:iv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4FD1D29E40CB024D"]
+			id: "52E24E710BE85ABF"
+			tasks: [{
+				id: "63AB07A20489AFA3"
+				item: "gtceu:luv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["52E24E710BE85ABF"]
+			id: "0198A928D8FEA81A"
+			tasks: [{
+				id: "58C165C0B36C38C6"
+				item: "gtceu:zpm_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0198A928D8FEA81A"]
+			id: "4575F46807167E35"
+			tasks: [{
+				id: "11B1E0DAAD1D9E28"
+				item: "gtceu:uv_solar_panel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "4396912E5D1B4F0D"
+			tasks: [{
+				id: "0420BBED2FCBD9AF"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "70AFC9EE67177182"
+			tasks: [{
+				id: "547643F51A6486E8"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			id: "62DC02DCD025AE73"
+			tasks: [{
+				id: "7AAAD385E0934A9E"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "6DECD897FBC09373"
+			tasks: [{
+				id: "78E02BC0DBFDD059"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["294325B9A238CC5E"]
+			id: "51335B362DCA2E0B"
+			tasks: [{
+				id: "6EFF4AE072159327"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "35A49605178B6CC4"
+			tasks: [{
+				id: "371FA3D8A3B37D70"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			id: "087BCB15C0B92083"
+			tasks: [{
+				id: "748CC22B7450BB6B"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "0CDACDB9DFC5537E"
+			tasks: [{
+				id: "13641A270D2A3F2D"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			id: "3D2EAB53A888F49E"
+			tasks: [{
+				id: "5E70DBB6496775D9"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+	]
 	title: "如何发电"
 }

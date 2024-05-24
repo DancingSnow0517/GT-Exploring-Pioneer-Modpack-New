@@ -36,19 +36,20 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["21F5F44D3B082230"]
+			hide_dependency_lines: true
 			id: "3AEC02CB597B7397"
 			tasks: [{
 				id: "14EC13A39CE0F8FC"
 				item: "minecraft:piston"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -62,7 +63,7 @@
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
@@ -73,14 +74,11 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.0d
+			x: -8.0d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"103B5D0D93892D27"
-				"70226C542DD7ECB3"
-			]
+			dependencies: ["103B5D0D93892D27"]
 			id: "7B6447613F8095C8"
 			size: 1.0d
 			tasks: [{
@@ -88,8 +86,8 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["70226C542DD7ECB3"]
@@ -100,8 +98,8 @@
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.0d
+			x: -8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["388E5264BE72C2BC"]
@@ -115,7 +113,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["60E1850C5632AB2B"]
@@ -125,8 +123,8 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 2.0d
+			x: -12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["60E1850C5632AB2B"]
@@ -136,8 +134,8 @@
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.0d
+			x: -12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["70226C542DD7ECB3"]
@@ -148,7 +146,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5FE1A76C2BDEED5E"]
@@ -164,8 +162,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: -8.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5532CDCCA743CB82"]
@@ -176,11 +174,12 @@
 				type: "dimension"
 			}]
 			title: "下界"
-			x: -5.0d
-			y: 6.0d
+			x: -6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7B4F27D97A5A32FF"]
+			hide_dependent_lines: true
 			icon: "gtceu:sulfur_dust"
 			id: "15A39DCDB0E14115"
 			tasks: [{
@@ -188,8 +187,8 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 6.0d
+			x: -5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7B6447613F8095C8"]
@@ -200,7 +199,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -213,8 +212,8 @@
 				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5FE1A76C2BDEED5E"]
@@ -224,8 +223,8 @@
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 8.0d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -239,10 +238,12 @@
 				item: { Count: 3b, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["70226C542DD7ECB3"]
+			hide_dependency_lines: true
 			icon: "gtceu:lv_electric_motor"
 			id: "212346BFE19C01EE"
 			tasks: [
@@ -275,14 +276,16 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 7.0d
+			x: -3.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["5FE1A76C2BDEED5E"]
 			description: [
 				"块模具=>玻璃"
 				"球模具=>真空管"
 			]
+			hide_dependency_lines: true
 			id: "13171ABF71BFCCA9"
 			tasks: [
 				{
@@ -297,8 +300,8 @@
 				}
 			]
 			title: "方的圆的"
-			x: -2.5d
-			y: -4.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["13171ABF71BFCCA9"]
@@ -309,8 +312,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -327,19 +330,20 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6CCBD7B0D7A0EFB7"]
+			hide_dependency_lines: true
 			id: "569270FB614D0D7F"
 			tasks: [{
 				id: "0D22EE108DCD3916"
 				item: "gtceu:resin_circuit_board"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["27A4D5673FC03DFC"]
@@ -350,8 +354,8 @@
 				item: { Count: 2b, id: "gtceu:resistor" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -368,10 +372,12 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["70226C542DD7ECB3"]
+			hide_dependency_lines: true
 			icon: "gtceu:tin_rotor"
 			id: "322C04682F75059F"
 			tasks: [
@@ -397,8 +403,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1C7C1456D4D56203"]
@@ -410,8 +416,8 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 8.0d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5FE1A76C2BDEED5E"]
@@ -421,12 +427,11 @@
 				title: "高压蒸汽机器"
 				type: "checkmark"
 			}]
-			x: -12.5d
-			y: 6.0d
+			x: -12.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
-				"70226C542DD7ECB3"
 				"1195ADBBB1A42522"
 				"6CCBD7B0D7A0EFB7"
 			]
@@ -445,13 +450,15 @@
 				}
 			]
 			x: -10.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["27A4D5673FC03DFC"]
 			description: [
 				"方解石=>蓝金石矿脉"
 				"石膏=>玄武岩矿砂矿脉"
 			]
+			hide_dependency_lines: true
 			id: "1195ADBBB1A42522"
 			tasks: [
 				{
@@ -468,8 +475,8 @@
 				}
 			]
 			title: "石膏与方解石"
-			x: -12.5d
-			y: 4.0d
+			x: -12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1B20785F52E61318"]
@@ -480,8 +487,8 @@
 				item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.0d
+			x: -6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70226C542DD7ECB3"]
@@ -491,8 +498,8 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.0d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["21F5F44D3B082230"]
@@ -503,7 +510,7 @@
 				item: "gtceu:red_alloy_single_wire"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -514,7 +521,7 @@
 				title: "额外的蒸汽获取"
 				type: "checkmark"
 			}]
-			x: -12.5d
+			x: -12.0d
 			y: 0.0d
 		}
 	]
