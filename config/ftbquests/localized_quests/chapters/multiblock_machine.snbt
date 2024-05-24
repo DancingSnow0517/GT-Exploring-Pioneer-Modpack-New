@@ -69,7 +69,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -271,8 +271,115 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 2.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6B90487E016BA4EE"]
+			id: "2E4B20A6FEF9282A"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "1D0D1A8316822B66"
+				item: "gtceu:portable_scanner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0AD5B043B0ADE175"]
+			icon: "gtceu:primitive_pump"
+			id: "3F2C0F1C2B662299"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "27C21253FCD2E807"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "284BA2E039BF7344"
+					item: {
+						Count: 10b
+						id: "gtceu:pump_deck"
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "498F44E68B7FD09C"
+					item: {
+						Count: 10b
+						id: "gtceu:treated_wood_frame"
+					}
+					type: "item"
+				}
+				{
+					id: "75C43FD37A0484B1"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "5A1A7BAC852B4F67"
+			tasks: [{
+				id: "4C1D4A8EF50710AB"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "07557C6D4D29801F"
+			tasks: [{
+				id: "4094683D50B98C0D"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "716BAA700A30BFBC"
+			tasks: [{
+				id: "1F44E9E5AA67D564"
+				item: "epimorphism:steam_piston_hammer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "511AD2779DDA8D27"
+			tasks: [{
+				id: "1977810E89A1D32F"
+				item: "epimorphism:steam_pressor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70226C542DD7ECB3"]
+			id: "0CFDE870493CBD44"
+			tasks: [{
+				id: "5EEE53A3B201419C"
+				item: "epimorphism:steam_separator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
 		}
 	]
 	title: "{gtep.multiblock_machine.title}"

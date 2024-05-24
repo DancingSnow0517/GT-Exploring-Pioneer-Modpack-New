@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "twilight_forest"
 	group: ""
+	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "453198B4C05155F9"
 	order_index: 14
 	quest_links: [ ]
