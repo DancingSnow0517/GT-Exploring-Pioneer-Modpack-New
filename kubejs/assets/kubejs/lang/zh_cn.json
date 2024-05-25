@@ -1,5 +1,14 @@
 {
     "item.kubejs.twilight_crystal": "暮色水晶",
+    "item.kubejs.storage_processor_1": "存储处理器 I",
+    "item.kubejs.storage_processor_2": "存储处理器 II",
+    "item.kubejs.storage_processor_3": "存储处理器 III",
+    "item.kubejs.storage_processor_4": "存储处理器 IV",
+    "item.kubejs.storage_processor_5": "存储处理器 V",
+    "item.kubejs.storage_processor_6": "存储处理器 VI",
+    "item.kubejs.storage_processor_7": "存储处理器 VII",
+    "item.kubejs.storage_processor_8": "存储处理器 VIII",
+    "item.kubejs.storage_processor_9": "存储处理器 IX",
 
     "block.gtceu.large_primitive_blast_furnace": "大型土高炉",
     "block.monazite.dimension_display.twilightforest.twilight_forest": "暮色森林",

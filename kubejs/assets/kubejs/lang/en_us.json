@@ -1,5 +1,14 @@
 {
     "item.kubejs.twilight_crystal": "Twilight Crystal",
+    "item.kubejs.storage_processor_1": "Storage Processor I",
+    "item.kubejs.storage_processor_2": "Storage Processor II",
+    "item.kubejs.storage_processor_3": "Storage Processor III",
+    "item.kubejs.storage_processor_4": "Storage Processor IV",
+    "item.kubejs.storage_processor_5": "Storage Processor V",
+    "item.kubejs.storage_processor_6": "Storage Processor VI",
+    "item.kubejs.storage_processor_7": "Storage Processor VII",
+    "item.kubejs.storage_processor_8": "Storage Processor VIII",
+    "item.kubejs.storage_processor_9": "Storage Processor IX",
 
     "block.gtceu.large_primitive_blast_furnace": "Large Primitive Blast Furnace",
     "block.monazite.dimension_display.twilightforest.twilight_forest": "Twilight Forest",
