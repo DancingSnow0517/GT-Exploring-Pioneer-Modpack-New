@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
 
     // printed processor
-    event.remove({ 'type': 'ae2:inscriber', 'output': /ae2:printed_\w+/ })
+    event.remove({'type': 'ae2:inscriber', 'output': /ae2:printed_\w+/})
     event.custom({
         'type': 'ae2:inscriber',
         'ingredients': {
@@ -142,8 +142,8 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
 
     // cell component
-    event.remove({ 'output': /.+cell_component.+/ })
-    event.remove({ 'output': /bigger_ae2:\w+_cell_component/ })
+    event.remove({'output': /.+cell_component.+/})
+    event.remove({'output': /bigger_ae2:\w+_cell_component/})
 
     const circuits = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv', 'uxv', 'opv', 'max']
     const boards = [
@@ -160,10 +160,10 @@ ServerEvents.recipes(event => {
     ]
 
     /**
-     * 
-     * @param {OutputItem_} output 
+     *
+     * @param {OutputItem_} output
      * @param {number} circuit_level
-     * @param {InputItem_} inputA 
+     * @param {InputItem_} inputA
      * @param {InputItem_} inputC
      */
     const cell_component = (output, circuit_level, inputA, inputC) => {
@@ -274,16 +274,16 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer('mixer/fluix_crystal_water')
         .itemInputs('ae2:charged_certus_quartz_crystal', '#forge:dusts/redstone', '#ae2:all_nether_quartz')
         .inputFluids('minecraft:water 500')
-        .itemOutputs('3x ae2:fluix_crystal')
+        .itemOutputs('3x #forge:gems/fluix')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(45 * 20)
     event.recipes.gtceu.mixer('mixer/fluix_crystal_distilled_water')
         .itemInputs('ae2:charged_certus_quartz_crystal', '#forge:dusts/redstone', '#ae2:all_nether_quartz')
         .inputFluids('gtceu:distilled_water 500')
-        .itemOutputs('3x ae2:fluix_crystal')
+        .itemOutputs('3x #forge:gems/fluix')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(25 * 20)
-    
+
     // 外壳
     event.remove({'output': /.+cell_housing/})
     event.remove({'id': /^ae2:network\/cells\/(?=.)(?!.*_storage$).*$/})
@@ -356,4 +356,248 @@ ServerEvents.recipes(event => {
         .itemOutputs('megacells:mega_fluid_cell_housing')
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20)
+
+    // 升级卡
+    event.remove({output: 'ae2wtlib:magnet_card'})
+    event.recipes.minecraft.crafting_shaped('ae2wtlib:magnet_card', [
+        'ABA',
+        'CDC',
+        'CCC'
+    ], {
+        'A': '#forge:plates/lapis',
+        'B': 'ae2:annihilation_plane',
+        'C': '#forge:ingots/magnetic_neodymium',
+        'D': 'ae2:advanced_card'
+    })
+    event.remove({output: 'ae2wtlib:quantum_bridge_card'})
+    event.recipes.minecraft.crafting_shaped('ae2wtlib:quantum_bridge_card', [
+        ' A ',
+        'BCB',
+        'EDE'
+    ], {
+        'A': 'ae2:wireless_receiver',
+        'B': 'ae2:fluix_pearl',
+        'C': 'ae2:advanced_card',
+        'D': 'ae2:singularity',
+        'E': '#forge:plates/ender_eye'
+    })
+
+    event.remove({output: /ae2:\w+_card/})
+    event.recipes.minecraft.crafting_shaped('ae2:basic_card', [
+        'AB ',
+        'CDB',
+        'AB'
+    ], {
+        'A': '#forge:plates/gold',
+        'B': '#forge:plates/aluminium',
+        'C': '#forge:plates/red_alloy',
+        'D': 'ae2:calculation_processor'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:advanced_card', [
+        'AB ',
+        'CDB',
+        'AB'
+    ], {
+        'A': '#forge:plates/diamond',
+        'B': '#forge:plates/stainless_steel',
+        'C': '#forge:plates/red_alloy',
+        'D': 'ae2:calculation_processor'
+    })
+
+    event.recipes.minecraft.crafting_shaped('ae2:capacity_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:basic_card',
+        'B': 'ae2:cell_component_1k',
+        'C': 'ae2:charged_certus_quartz_crystal'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:crafting_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:basic_card',
+        'B': 'ae2:cell_component_1k',
+        'C': '#forge:workbenches'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:redstone_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:basic_card',
+        'B': 'minecraft:redstone_torch',
+        'C': 'ae2:calculation_processor'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:void_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:basic_card',
+        'B': 'ae2:cell_component_1k',
+        'C': 'trashcans:item_trash_can'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:fuzzy_card', [
+        'AB',
+        'CD'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'ae2:logic_processor',
+        'C': 'ae2:calculation_processor',
+        'D': 'ae2:engineering_processor'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:inverter_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'minecraft:redstone_torch',
+        'C': 'ae2:calculation_processor'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:equal_distribution_card', [
+        'AB',
+        'BC'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'naturesaura:item_distributor',
+        'C': 'ae2:calculation_processor'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:speed_card', [
+        'AB',
+        'CD'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'ae2:logic_processor',
+        'C': 'ae2:engineering_processor',
+        'D': '#forge:gems/fluix'
+    })
+    event.recipes.minecraft.crafting_shaped('ae2:energy_card', [
+        'AB',
+        'CD'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'ae2:logic_processor',
+        'C': 'ae2:engineering_processor',
+        'D': 'ae2:dense_energy_cell'
+    })
+    event.remove({output: /megacells:\w+_card/})
+    event.recipes.minecraft.crafting_shaped('megacells:greater_energy_card', [
+        'AB',
+        'CD'
+    ], {
+        'A': 'ae2:advanced_card',
+        'B': 'ae2:logic_processor',
+        'C': 'ae2:engineering_processor',
+        'D': 'megacells:mega_energy_cell'
+    })
+
+    event.recipes.minecraft.crafting_shaped('ae2:memory_card', [
+        'ABC',
+        'DED'
+    ], {
+        'A': 'ae2:calculation_processor',
+        'B': '#gtceu:circuits/ev',
+        'C': '#forge:plates/stainless_steel',
+        'D': '#forge:plates/gold',
+        'E': '#forge:plates/red_alloy'
+    })
+    event.recipes.minecraft.crafting_shapeless('betterp2p:advanced_memory_card', [
+        'ae2:memory_card',
+        'ae2:network_tool'
+    ])
+
+    // 其他
+    event.remove({'output': 'ae2:wireless_receiver'})
+    event.recipes.minecraft.crafting_shaped('ae2:wireless_receiver', [
+        'ABA',
+        ' C ',
+        'DED'
+    ], {
+        'A': 'ae2:quartz_fiber',
+        'B': 'ae2:fluix_pearl',
+        'C': 'minecraft:ender_eye',
+        'D': '#forge:plates/certus_quartz',
+        'E': '#gtceu:circuits/hv'
+    })
+    event.recipes.gtceu.assembler('assembler/wireless_receiver')
+        .itemInputs('minecraft:ender_eye', '2x ae2:quartz_fiber', 'ae2:fluix_pearl', '2x #forge:plates/certus_quartz', '#gtceu:circuits/hv')
+        .itemOutputs('ae2:wireless_receiver')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20)
+
+    event.recipes.gtceu.wiremill('wiremill/quartz_fiber')
+        .itemInputs('#forge:gems/certus_quartz')
+        .itemOutputs('2x ae2:quartz_fiber')
+        .EUt(7)
+        .duration(2.5 * 20)
+
+    event.remove({output: 'ae2:wireless_booster'})
+    event.recipes.minecraft.crafting_shaped('ae2:wireless_booster', [
+        'ABC',
+        'DED'
+    ], {
+        'A': '#forge:dusts/fluix',
+        'B': '#forge:gems/certus_quartz',
+        'C': '#forge:dusts/ender_pearl',
+        'D': '#forge:plates/steel',
+        'E': '#forge:plates/aluminium'
+    })
+
+    event.remove({output: 'ae2:annihilation_core'})
+    event.recipes.minecraft.crafting_shaped('2x ae2:annihilation_core', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:gems/nether_quartz',
+        'B': 'ae2:logic_processor',
+        'C': '#forge:gems/fluix'
+    })
+    event.recipes.gtceu.assembler('assembler/annihilation_core')
+        .itemInputs('4x #forge:gems/nether_quartz', '4x ae2:logic_processor', '#forge:gems/fluix')
+        .itemOutputs('2x ae2:annihilation_core')
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:formation_core'})
+    event.recipes.minecraft.crafting_shaped('2x ae2:formation_core', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:gems/certus_quartz',
+        'B': 'ae2:logic_processor',
+        'C': '#forge:gems/fluix'
+    })
+    event.recipes.gtceu.assembler('assembler/formation_core')
+        .itemInputs('4x #forge:gems/certus_quartz', '4x ae2:logic_processor', '#forge:gems/fluix')
+        .itemOutputs('2x ae2:formation_core')
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:fluix_pearl'})
+    event.recipes.minecraft.crafting_shaped('ae2:fluix_pearl', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:gems/fluix',
+        'B': '#forge:gems/ender_eye',
+        'C': '#forge:gems/ender_pearl'
+    })
+    event.remove({output: 'ae2netanalyser:network_analyser'})
+    event.recipes.minecraft.crafting_shaped('ae2netanalyser:network_analyser', [
+        'ABA',
+        'CDC',
+        'EFG'
+    ], {
+        'A': '#forge:gems/fluix',
+        'B': 'ae2:wireless_receiver',
+        'C': '#forge:screws/stainless_steel',
+        'D': 'ae2:network_tool',
+        'E': '#forge:tools/screwdrivers',
+        'F': 'ae2:engineering_processor',
+        'G': '#forge:tools/wrenches'
+    })
 })
