@@ -505,6 +505,169 @@ ServerEvents.recipes(event => {
         'ae2:network_tool'
     ])
 
+    // 设备
+    event.remove({output: 'ae2:inscriber'})
+    event.remove({output: 'expatternprovider:ex_inscriber'})
+    event.recipes.minecraft.crafting_shaped('ae2:inscriber', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#forge:gems/fluix',
+        'C': 'minecraft:sticky_piston',
+        'D': 'gtceu:mv_forming_press'
+    })
+    event.recipes.minecraft.crafting_shaped('expatternprovider:ex_inscriber', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': 'gtceu:titanium_plate',
+        'B': 'ae2:inscriber',
+        'C': 'ae2:engineering_processor',
+    })
+    event.remove({output: 'ae2:charger'})
+    event.remove({output: 'expatternprovider:ex_charger'})
+    event.recipes.minecraft.crafting_shaped('ae2:charger', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#forge:gems/fluix',
+        'C': 'gtceu:copper_single_cable',
+        'D': 'gtceu:mv_electrolyzer'
+    })
+    event.recipes.minecraft.crafting_shaped('expatternprovider:ex_charger', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:plates/titanium',
+        'B': 'ae2:charger',
+        'C': 'ae2:engineering_processor',
+    })
+
+    event.remove({output: 'ae2:crafting_unit'})
+    event.remove({output: 'megacells:mega_crafting_unit'})
+    event.recipes.minecraft.crafting_shaped('ae2:crafting_unit', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'ae2:logic_processor',
+        'C': '#gtceu:circuits/lv',
+        'D': 'ae2:calculation_processor',
+        'E': 'ae2:engineering_processor'
+    })
+    event.recipes.gtceu.assembler('assembler/crafting_unit')
+        .itemInputs('4x #forge:plates/aluminium', '2x #gtceu:circuits/lv', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor')
+        .itemOutputs('ae2:crafting_unit')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+
+    event.recipes.minecraft.crafting_shaped('megacells:mega_crafting_unit', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        'A': '#forge:plates/titanium',
+        'B': 'ae2:logic_processor',
+        'C': '#gtceu:circuits/hv',
+        'D': 'ae2:calculation_processor',
+        'E': 'ae2:engineering_processor'
+    })
+    event.recipes.gtceu.assembler('assembler/mega_crafting_unit')
+        .itemInputs('4x #forge:plates/titanium', '2x #gtceu:circuits/hv', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor')
+        .itemOutputs('megacells:mega_crafting_unit')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:crafting_accelerator'})
+    event.remove({output: 'bigger_ae2:4_core_crafting_accelerator'})
+    event.remove({output: 'bigger_ae2:16_core_crafting_accelerator'})
+    event.recipes.gtceu.assembler('assembler/crafting_accelerator')
+        .itemInputs('ae2:crafting_unit', 'ae2:engineering_processor')
+        .itemOutputs('ae2:crafting_accelerator')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(20 * 20)
+    event.recipes.gtceu.assembler('assembler/4_core_crafting_accelerator')
+        .itemInputs('ae2:crafting_unit', '2x #gtceu:circuits/iv')
+        .itemOutputs('bigger_ae2:4_core_crafting_accelerator')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(20 * 20)
+    event.recipes.gtceu.assembler('assembler/16_core_crafting_accelerator')
+        .itemInputs('ae2:crafting_unit', '2x #gtceu:circuits/uv')
+        .itemOutputs('bigger_ae2:16_core_crafting_accelerator')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(20 * 20)
+
+    event.remove({output: 'ae2:1k_crafting_storage'})
+    event.remove({output: 'ae2:4k_crafting_storage'})
+    event.remove({output: 'ae2:16k_crafting_storage'})
+    event.remove({output: 'ae2:64k_crafting_storage'})
+    event.remove({output: 'ae2:256k_crafting_storage'})
+    event.recipes.gtceu.assembler('assembler/1k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_1k')
+        .itemOutputs('ae2:1k_crafting_storage')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/4k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_4k')
+        .itemOutputs('ae2:4k_crafting_storage')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/16k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_16k')
+        .itemOutputs('ae2:16k_crafting_storage')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/64k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_64k')
+        .itemOutputs('ae2:64k_crafting_storage')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/256k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_256k')
+        .itemOutputs('ae2:256k_crafting_storage')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'megacells:1m_crafting_storage'})
+    event.remove({output: 'megacells:4m_crafting_storage'})
+    event.remove({output: 'megacells:16m_crafting_storage'})
+    event.remove({output: 'megacells:64m_crafting_storage'})
+    event.remove({output: 'megacells:256m_crafting_storage'})
+    event.recipes.gtceu.assembler('assembler/1m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_1m')
+        .itemOutputs('megacells:1m_crafting_storage')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/4m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_4m')
+        .itemOutputs('megacells:4m_crafting_storage')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/16m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_16m')
+        .itemOutputs('megacells:16m_crafting_storage')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/64m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_64m')
+        .itemOutputs('megacells:64m_crafting_storage')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/256m_crafting_storage')
+        .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_256m')
+        .itemOutputs('megacells:256m_crafting_storage')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(5 * 20)
+
     // 其他
     event.remove({'output': 'ae2:wireless_receiver'})
     event.recipes.minecraft.crafting_shaped('ae2:wireless_receiver', [
