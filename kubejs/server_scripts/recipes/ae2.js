@@ -506,6 +506,24 @@ ServerEvents.recipes(event => {
     ])
 
     // 设备
+    const ex_machine = (ae, ex) => {
+        event.recipes.minecraft.crafting_shaped(ex, [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            'A': '#forge:plates/titanium',
+            'B': ae,
+            'C': 'ae2:engineering_processor',
+        })
+        event.recipes.gtceu.assembler(`assembler/${ex.split(':')[1]}`)
+            .itemInputs('4x #forge:plates/titanium', `4x ${ae}`, 'ae2:engineering_processor')
+            .itemOutputs(ex)
+            .circuit(2)
+            .EUt(GTValues.VA[GTValues.HV])
+            .duration(5 * 20)
+    }
+
     event.remove({output: 'ae2:inscriber'})
     event.remove({output: 'expatternprovider:ex_inscriber'})
     event.recipes.minecraft.crafting_shaped('ae2:inscriber', [
@@ -518,15 +536,8 @@ ServerEvents.recipes(event => {
         'C': 'minecraft:sticky_piston',
         'D': 'gtceu:mv_forming_press'
     })
-    event.recipes.minecraft.crafting_shaped('expatternprovider:ex_inscriber', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        'A': 'gtceu:titanium_plate',
-        'B': 'ae2:inscriber',
-        'C': 'ae2:engineering_processor',
-    })
+    ex_machine('ae2:inscriber', 'expatternprovider:ex_inscriber')
+    
     event.remove({output: 'ae2:charger'})
     event.remove({output: 'expatternprovider:ex_charger'})
     event.recipes.minecraft.crafting_shaped('ae2:charger', [
@@ -539,15 +550,7 @@ ServerEvents.recipes(event => {
         'C': 'gtceu:copper_single_cable',
         'D': 'gtceu:mv_electrolyzer'
     })
-    event.recipes.minecraft.crafting_shaped('expatternprovider:ex_charger', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        'A': '#forge:plates/titanium',
-        'B': 'ae2:charger',
-        'C': 'ae2:engineering_processor',
-    })
+    ex_machine('ae2:charger', 'expatternprovider:ex_charger')
 
     event.remove({output: 'ae2:crafting_unit'})
     event.remove({output: 'megacells:mega_crafting_unit'})
@@ -667,6 +670,92 @@ ServerEvents.recipes(event => {
         .itemOutputs('megacells:256m_crafting_storage')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(5 * 20)
+
+    event.remove({type: 'minecraft:crafting_shaped', output: 'ae2:pattern_provider'})
+    event.remove({type: 'minecraft:crafting_shaped', output: 'expatternprovider:ex_pattern_provider'})
+    event.remove({output: 'megacells:mega_pattern_provider'})
+    event.recipes.minecraft.crafting_shaped('ae2:pattern_provider', [
+        'ABA',
+        'CDE',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#forge:workbenches',
+        'C': 'ae2:annihilation_core',
+        'D': 'gtceu:mv_machine_casing',
+        'E': 'ae2:formation_core'
+    })
+    event.recipes.gtceu.assembler('assembler/pattern_provider')
+        .itemInputs('4x #forge:plates/aluminium', '2x #forge:workbenches', 'ae2:annihilation_core', 'ae2:formation_core', 'gtceu:mv_machine_casing')
+        .itemOutputs('ae2:pattern_provider')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    ex_machine('ae2:pattern_provider', 'expatternprovider:ex_pattern_provider')
+
+    event.remove({type: 'minecraft:crafting_shaped', output: 'ae2:interface'})
+    event.remove({type: 'minecraft:crafting_shaped', output: 'expatternprovider:ex_interface'})
+    event.remove({output: 'megacells:mega_interface'})
+    event.recipes.minecraft.crafting_shaped('ae2:interface', [
+        'ABA',
+        'CDE',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#ae2:glass_cable',
+        'C': 'ae2:annihilation_core',
+        'D': 'gtceu:mv_machine_casing',
+        'E': 'ae2:formation_core'
+    })
+    event.recipes.gtceu.assembler('assembler/interface')
+        .itemInputs('4x #forge:plates/aluminium', '2x #ae2:glass_cable', 'ae2:annihilation_core', 'ae2:formation_core', 'gtceu:mv_machine_casing')
+        .itemOutputs('ae2:pattern_provider')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    ex_machine('ae2:interface', 'expatternprovider:ex_interface')
+
+    event.remove({output: 'ae2:molecular_assembler'})
+    event.remove({output: 'expatternprovider:ex_molecular_assembler'})
+    event.recipes.minecraft.crafting_shaped('ae2:molecular_assembler', [
+        'ABA',
+        'CDE',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'ae2:quartz_glass',
+        'C': 'ae2:annihilation_core',
+        'D': 'gtceu:mv_assembler',
+        'E': 'ae2:formation_core'
+    })
+    event.recipes.gtceu.assembler('assembler/molecular_assembler')
+        .itemInputs('4x #forge:plates/aluminium', 'ae2:annihilation_core', 'ae2:formation_core', 'gtceu:mv_assembler')
+        .inputFluids('gtceu:glass 288')
+        .itemOutputs('ae2:molecular_assembler')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    ex_machine('ae2:molecular_assembler', 'expatternprovider:ex_molecular_assembler')
+
+    event.remove({output: 'ae2:drive'})
+    event.remove({output: 'expatternprovider:ex_drive'})
+    event.recipes.minecraft.crafting_shaped('ae2:drive', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        'A': '#forge:plates/steel',
+        'B': 'ae2:engineering_processor',
+        'C': '#ae2:glass_cable',
+        'D': 'ae2:chest',
+        'E': '#gtceu:circuits/lv'
+    })
+    event.recipes.gtceu.assembler('assembler/drive')
+        .itemInputs('4x #forge:plates/steel', '2x #ae2:glass_cable', 'ae2:engineering_processor', 'ae2:chest', '#gtceu:circuits/lv')
+        .itemOutputs('ae2:drive')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    ex_machine('ae2:drive', 'expatternprovider:ex_drive')
 
     // 其他
     event.remove({'output': 'ae2:wireless_receiver'})
