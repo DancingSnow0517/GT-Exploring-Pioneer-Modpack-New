@@ -1,13 +1,13 @@
-filename = 'functionalstorage-1.20.1-1.2.10.jar'
+filename = 'functionalstorage-1.20.1-1.2.11.jar'
 name = 'Functional Storage'
 side = 'both'
 
 [download]
-hash = '0356c36144adccf2fb33fae12135ce65f9ba52ee'
+hash = '15a75d38e61202a4ede0c6ddca62653d3d99548c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5169765
+file-id = 5373105
 project-id = 556861

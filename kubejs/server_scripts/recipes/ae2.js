@@ -757,6 +757,195 @@ ServerEvents.recipes(event => {
         .duration(5 * 20)
     ex_machine('ae2:drive', 'expatternprovider:ex_drive')
 
+    event.remove({output: 'ae2:energy_cell'})
+    event.remove({output: 'ae2:dense_energy_cell'})
+    event.remove({output: 'megacells:mega_energy_cell'})
+    event.recipes.minecraft.crafting_shaped('ae2:energy_cell', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        'A': '#forge:plates/certus_quartz',
+        'B': '#forge:dusts/fluix',
+        'C': '#gtceu:circuits/lv',
+        'D': 'ae2:fluix_block',
+        'E': 'gtceu:copper_octal_cable'
+    })
+    event.recipes.gtceu.assembler('assembler/energy_cell')
+        .itemInputs('4x #forge:plates/certus_quartz', '2x #gtceu:circuits/lv', '#forge:dusts/fluix', 'ae2:fluix_block', 'gtceu:copper_octal_cable')
+        .itemOutputs('ae2:energy_cell')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+    
+    event.recipes.minecraft.crafting_shaped('ae2:dense_energy_cell', [
+        'AAA',
+        'BCB',
+        'ADA'
+    ], {
+        'A': 'ae2:energy_cell',
+        'B': '#gtceu:circuits/ev',
+        'C': 'ae2:engineering_processor',
+        'D': 'gtceu:ev_battery_buffer_16x'
+    })
+    event.recipes.gtceu.assembler('assembler/dense_energy_cell')
+        .itemInputs('5x ae2:energy_cell', '2x #gtceu:circuits/ev', 'ae2:engineering_processor', 'gtceu:ev_battery_buffer_16x')
+        .itemOutputs('ae2:dense_energy_cell')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(10 * 20)
+    
+    event.recipes.minecraft.crafting_shaped('megacells:mega_energy_cell', [
+            'AAA',
+            'BCB',
+            'ADA'
+        ], {
+            'A': 'ae2:dense_energy_cell',
+            'B': '#gtceu:circuits/zpm',
+            'C': 'ae2:engineering_processor',
+            'D': 'gtceu:zpm_battery_buffer_16x'
+        })
+    event.recipes.gtceu.assembler('assembler/mega_energy_cell')
+            .itemInputs('5x ae2:dense_energy_cell', '2x #gtceu:circuits/zpm', 'ae2:engineering_processor', 'gtceu:zpm_battery_buffer_16x')
+            .itemOutputs('megacells:mega_energy_cell')
+            .circuit(2)
+            .EUt(GTValues.VA[GTValues.ZPM])
+            .duration(10 * 20)
+
+    event.remove({output: 'ae2:controller'})
+    event.recipes.minecraft.crafting_shaped('ae2:controller', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#gtceu:circuits/mv',
+        'C': 'ae2:engineering_processor',
+        'D': 'ae2:fluix_block'
+    })
+    event.recipes.gtceu.assembler('assembler/controller')
+        .itemInputs('4x #forge:plates/aluminium', '2x #gtceu:circuits/mv', '2x ae2:engineering_processor', 'ae2:fluix_block')
+        .itemOutputs('ae2:controller')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+
+    event.remove({output: 'ae2:chest'})
+    event.recipes.minecraft.crafting_shaped('ae2:chest', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        'A': '#forge:plates/steel',
+        'B': '#gtceu:circuits/mv',
+        'C': '#ae2:glass_cable',
+        'D': 'ironchest:iron_chest'
+    })
+    event.recipes.gtceu.assembler('assembler/ae_chest')
+        .itemInputs('4x #forge:plates/steel', '2x #gtceu:circuits/mv', '2x #ae2:glass_cable', 'ironchest:iron_chest')
+        .itemOutputs('ae2:chest')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({type: 'minecraft:crafting_shaped', output: 'ae2:energy_acceptor'})
+    event.recipes.minecraft.crafting_shaped('ae2:energy_acceptor', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': '#forge:gems/fluix',
+        'C': '#forge:plates/glowstone'
+    })
+    
+    event.remove({output: 'ae2:condenser'})
+    event.recipes.minecraft.crafting_shaped('ae2:condenser', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'gtceu:mv_electric_piston',
+        'C': 'gtceu:mv_machine_hull'
+    })
+
+    event.remove({output: 'ae2:cell_workbench'})
+    event.recipes.minecraft.crafting_shaped('ae2:cell_workbench', [
+        'ABC',
+        'DED',
+        'FGF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': 'gtceu:computer_monitor_cover',
+        'C': '#forge:tools/wrenches',
+        'D': '#forge:screws/aluminium',
+        'E': '#forge:workbenches',
+        'F': '#forge:plates/aluminium',
+        'G': 'ae2:calculation_processor'
+    })
+
+    event.remove({output: 'ae2:io_port'})
+    event.recipes.minecraft.crafting_shaped('ae2:io_port', [
+        'ABA',
+        'CAC',
+        'BDB'
+    ], {
+        'A': '#ae2:glass_cable',
+        'B': '#forge:plates/aluminium',
+        'C': 'ae2:drive',
+        'D': 'ae2:logic_processor'
+    })
+
+    event.remove({output: 'ae2:growth_accelerator'})
+    event.recipes.minecraft.crafting_shaped('ae2:growth_accelerator', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'ae2:quartz_glass',
+        'C': '#ae2:glass_cable',
+        'D': 'gtceu:mv_autoclave',
+        'E': 'ae2:engineering_processor'
+    })
+
+    event.remove({output: 'ae2:quantum_ring'})
+    event.recipes.minecraft.crafting_shaped('ae2:quantum_ring', [
+        'ABA',
+        'DCE',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'ae2:logic_processor',
+        'C': 'ae2:energy_cell',
+        'D': 'ae2:engineering_processor',
+        'E': '#ae2:glass_cable'
+    })
+    event.recipes.gtceu.assembler('assembler/quantum_ring')
+        .itemInputs('4x #forge:plates/aluminium', '2x ae2:logic_processor', 'ae2:energy_cell', 'ae2:engineering_processor', '#ae2:glass_cable')
+        .itemOutputs('ae2:quantum_ring')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:quantum_link'})
+    event.recipes.minecraft.crafting_shaped('ae2:quantum_link', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        'A': '#forge:plates/aluminium',
+        'B': 'ae2:fluix_pearl',
+        'C': 'ae2:quartz_glass'
+    })
+    event.recipes.gtceu.assembler('assembler/quantum_link')
+        .itemInputs('4x #forge:plates/aluminium', '4x ae2:fluix_pearl', 'ae2:quartz_glass')
+        .itemOutputs('ae2:quantum_link')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
     // 其他
     event.remove({'output': 'ae2:wireless_receiver'})
     event.recipes.minecraft.crafting_shaped('ae2:wireless_receiver', [
@@ -852,4 +1041,154 @@ ServerEvents.recipes(event => {
         'F': 'ae2:engineering_processor',
         'G': '#forge:tools/wrenches'
     })
+
+    event.remove({output: 'ae2:fluix_glass_cable', input: 'ae2:quartz_fiber'})
+    event.recipes.minecraft.crafting_shaped('2x ae2:fluix_glass_cable', [
+        'ABA',
+        'CCC',
+        'ABA'
+    ], {
+        'A': '#forge:gems/certus_quartz',
+        'B': '#forge:dusts/fluix',
+        'C': 'ae2:quartz_fiber'
+    })
+    event.recipes.gtceu.assembler('assembler/fluix_glass_cable')
+        .itemInputs('3x ae2:quartz_fiber', '2x #forge:dusts/fluix')
+        .itemOutputs('2x ae2:fluix_glass_cable')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:fluix_covered_cable', input: 'ae2:fluix_glass_cable'})
+    event.recipes.gtceu.assembler('assembler/fluix_covered_cable_rubber')
+        .itemInputs('ae2:fluix_glass_cable')
+        .inputFluids('gtceu:rubber 144')
+        .itemOutputs('ae2:fluix_covered_cable')
+        .circuit(24)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/fluix_covered_cable_silicone_rubber')
+        .itemInputs('ae2:fluix_glass_cable')
+        .inputFluids('gtceu:silicone_rubber 72')
+        .itemOutputs('ae2:fluix_covered_cable')
+        .circuit(24)
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:fluix_covered_dense_cable', input: 'ae2:fluix_covered_cable'})
+    event.recipes.gtceu.assembler('assembler/fluix_covered_dense_cable')
+        .itemInputs('4x ae2:fluix_covered_cable')
+        .inputFluids('gtceu:silicone_rubber 144')
+        .itemOutputs('ae2:fluix_covered_dense_cable')
+        .circuit(24)
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(10 * 20)
+
+    event.remove({output: 'ae2:fluix_smart_cable', input: 'ae2:fluix_covered_cable'})
+    event.recipes.gtceu.assembler('assembler/fluix_smart_cable_glass_cable')
+        .itemInputs('4x #ae2:glass_cable', '#gtceu:circuits/mv')
+        .inputFluids('gtceu:wrought_iron 144')
+        .itemOutputs('4x ae2:fluix_smart_cable')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/fluix_smart_cable_covered_cable')
+        .itemInputs('4x #ae2:covered_cable', '#gtceu:circuits/mv')
+        .inputFluids('gtceu:wrought_iron 144')
+        .itemOutputs('4x ae2:fluix_smart_cable')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:fluix_smart_dense_cable', input: 'ae2:fluix_covered_dense_cable'})
+    event.remove({output: 'ae2:fluix_smart_dense_cable', input: 'ae2:fluix_smart_cable'})
+    event.recipes.gtceu.assembler('assembler/fluix_smart_dense_cable_covered_dense_cable')
+        .itemInputs('4x #ae2:covered_dense_cable', '#gtceu:circuits/hv')
+        .inputFluids('gtceu:invar 144')
+        .itemOutputs('4x ae2:fluix_smart_dense_cable')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/fluix_smart_dense_cable_smart_cable')
+        .itemInputs('16x #ae2:smart_cable', '#gtceu:circuits/hv')
+        .inputFluids('gtceu:invar 144')
+        .itemOutputs('4x ae2:fluix_smart_dense_cable')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(5 * 20)
+    
+    // 终端
+    event.remove({output: 'ae2:semi_dark_monitor', type: 'minecraft:crafting_shaped'})
+    event.recipes.gtceu.assembler('assembler/semi_dark_monitor')
+        .itemInputs('gtceu:computer_monitor_cover', '2x #forge:plates/glowstone', '#forge:plates/aluminium', '#forge:plates/aluminium')
+        .inputFluids('gtceu:soldering_alloy 144')
+        .itemOutputs('ae2:semi_dark_monitor')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:terminal'})
+    event.recipes.minecraft.crafting_shaped('ae2:terminal', [
+        'ABA',
+        'CDE',
+        'AFA'
+    ], {
+        'A': '#forge:gems/nether_quartz',
+        'B': '#gtceu:circuits/mv',
+        'C': 'ae2:formation_core',
+        'D': '#ae2:illuminated_panel',
+        'E': 'ae2:annihilation_core',
+        'F': '#forge:tools/screwdrivers'
+    })
+    event.recipes.gtceu.assembler('assembler/ae_terminal')
+        .itemInputs('4x #forge:gems/nether_quartz', '#gtceu:circuits/mv', 'ae2:formation_core', 'ae2:annihilation_core', '#ae2:illuminated_panel')
+        .itemOutputs('ae2:terminal')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.recipes.gtceu.assembler('assembler/crafting_terminal')
+        .itemInputs('ae2:terminal', 'ae2:calculation_processor', '#forge:workbenches')
+        .itemOutputs('ae2:crafting_terminal')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.recipes.gtceu.assembler('assembler/pattern_access_terminal')
+        .itemInputs('#ae2:illuminated_panel', '#ae2:pattern_provider', 'ae2:engineering_processor')
+        .itemOutputs('ae2:pattern_access_terminal')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.recipes.gtceu.assembler('assembler/pattern_encoding_terminal')
+        .itemInputs('ae2:crafting_terminal', 'ae2:engineering_processor')
+        .itemOutputs('ae2:pattern_encoding_terminal')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+    
+    event.remove({output: 'expatternprovider:ex_pattern_access_part'})
+    ex_machine('ae2:pattern_encoding_terminal', 'expatternprovider:ex_pattern_access_part')
+
+    event.recipes.gtceu.assembler('assembler/requester_terminal')
+        .itemInputs('#ae2:illuminated_panel', 'ae2:logic_processor', 'merequester:requester')
+        .itemOutputs('merequester:requester_terminal')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(5 * 20)
+
+    event.remove({output: 'ae2:wireless_terminal'})
+    event.recipes.minecraft.crafting_shaped('ae2:wireless_terminal', [
+        'ABA',
+        'CDC',
+        'CEC'
+    ], {
+        'A': 'ae2:wireless_receiver',
+        'B': 'ae2:terminal',
+        'C': '#forge:plates/nether_quartz',
+        'D': 'ae2:engineering_processor',
+        'E': 'ae2:dense_energy_cell'
+    })
+    const wireless_terminal = (ae_terminal, wireless_terminal) => {
+        event.remove({output: wireless_terminal})
+        event.recipes.gtceu.assembler(`assembler/${wireless_terminal.split(':')[1]}`)
+            .itemInputs('ae2:wireless_terminal', ae_terminal)
+            .itemOutputs(wireless_terminal)
+            .EUt(GTValues.VA[GTValues.MV])
+            .duration(30 * 20)
+    }
+    wireless_terminal('ae2:crafting_terminal', 'ae2:wireless_crafting_terminal')
+    wireless_terminal('ae2:pattern_encoding_terminal', 'ae2wtlib:wireless_pattern_encoding_terminal')
+    wireless_terminal('ae2:pattern_access_terminal', 'ae2wtlib:wireless_pattern_access_terminal')
+    wireless_terminal('expatternprovider:ex_pattern_access_part', 'expatternprovider:wireless_ex_pat')
 })
