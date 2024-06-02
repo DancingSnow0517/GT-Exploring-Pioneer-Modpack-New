@@ -946,6 +946,105 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV])
         .duration(5 * 20)
 
+    event.remove({output: 'ae2:import_bus'})
+    event.remove({output: 'expatternprovider:ex_import_bus_part'})
+    event.recipes.minecraft.crafting_shaped('ae2:import_bus', [
+        'ABC',
+        'DED',
+        'FGF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': '#forge:plates/aluminium',
+        'C': '#forge:tools/hammers',
+        'D': '#forge:plates/certus_quartz',
+        'E': 'ae2:annihilation_core',
+        'F': '#forge:plates/nether_quartz',
+        'G': 'gtceu:lv_electric_piston'
+    })
+    event.recipes.gtceu.assembler('assembler/import_bus')
+        .itemInputs('#forge:plates/aluminium', '2x #forge:plates/certus_quartz', '2x #forge:plates/nether_quartz', 'ae2:annihilation_core', 'gtceu:lv_electric_piston')
+        .itemOutputs('ae2:import_bus')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+    ex_machine('ae2:import_bus', 'expatternprovider:ex_import_bus_part')
+
+    event.remove({output: 'ae2:export_bus'})
+    event.remove({output: 'expatternprovider:ex_export_bus_part'})
+    event.recipes.minecraft.crafting_shaped('ae2:export_bus', [
+        'ABC',
+        'DED',
+        'FGF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': '#forge:plates/aluminium',
+        'C': '#forge:tools/hammers',
+        'D': '#forge:plates/certus_quartz',
+        'E': 'ae2:formation_core',
+        'F': '#forge:plates/nether_quartz',
+        'G': 'gtceu:lv_electric_piston'
+    })
+    event.recipes.gtceu.assembler('assembler/export_bus')
+        .itemInputs('#forge:plates/aluminium', '2x #forge:plates/certus_quartz', '2x #forge:plates/nether_quartz', 'ae2:formation_core', 'gtceu:lv_electric_piston')
+        .itemOutputs('ae2:export_bus')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+    ex_machine('ae2:export_bus', 'expatternprovider:ex_export_bus_part')
+
+    event.remove({output: 'ae2:storage_bus'})
+    event.recipes.minecraft.crafting_shaped('ae2:storage_bus', [
+        'ABC',
+        'DED',
+        'FGF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': '#forge:chests/wooden',
+        'C': '#forge:tools/hammers',
+        'D': '#forge:plates/certus_quartz',
+        'E': '#ae2:interface',
+        'F': '#forge:plates/nether_quartz',
+        'G': 'gtceu:lv_electric_piston'
+    })
+    event.recipes.gtceu.assembler('assembler/storage_bus')
+        .itemInputs('#forge:chests/wooden', '2x #forge:plates/certus_quartz', '2x #forge:plates/nether_quartz', '#ae2:interface', 'gtceu:lv_electric_piston')
+        .itemOutputs('ae2:storage_bus')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+    
+    event.remove({output: 'expatternprovider:wireless_connect'})
+    event.recipes.minecraft.crafting_shaped('expatternprovider:wireless_connect', [
+        'ABA',
+        'DCD',
+        'ABA'
+    ], {
+        'A': '#forge:gems/fluix',
+        'B': '#forge:plates/aluminium',
+        'C': 'ae2:wireless_receiver',
+        'D': 'ae2:engineering_processor'
+    })
+    event.recipes.gtceu.assembler('assembler/wireless_connect')
+        .itemInputs('4x #forge:gems/fluix', '2x #forge:plates/aluminium', '2x ae2:engineering_processor', 'ae2:wireless_receiver')
+        .itemOutputs('expatternprovider:wireless_connect')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+
+    event.remove({output: 'expatternprovider:wireless_tool'})
+    event.recipes.minecraft.crafting_shaped('expatternprovider:wireless_tool', [
+        'ABA',
+        'CDC',
+        'EFE'
+    ], {
+        'A': 'ae2:wireless_receiver',
+        'B': '#forge:plates/aluminium',
+        'C': 'ae2:engineering_processor',
+        'D': '#ae2:illuminated_panel',
+        'E': '#forge:gems/fluix',
+        'F': '#ae2:glass_cable'
+    })
+
     // 其他
     event.remove({'output': 'ae2:wireless_receiver'})
     event.recipes.minecraft.crafting_shaped('ae2:wireless_receiver', [
@@ -1112,6 +1211,89 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(5 * 20)
     
+
+    event.remove({output: 'merequester:requester'})
+    event.recipes.minecraft.crafting_shaped('merequester:requester', [
+        'ABA',
+        'CDE',
+        'ABA'
+    ], {
+        'A': '#forge:plates/niobium_titanium',
+        'B': 'ae2:crafting_card',
+        'C': 'ae2:annihilation_core',
+        'D': '#ae2:pattern_provider',
+        'E': 'ae2:formation_core'
+    })
+    event.recipes.gtceu.assembler('assembler/merequester')
+        .itemInputs('4x #forge:plates/niobium_titanium', '2x ae2:crafting_card', 'ae2:annihilation_core', 'ae2:formation_core', '#ae2:pattern_provider')
+        .itemOutputs('merequester:requester')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(10 * 20)
+    
+    event.remove({output: 'ae2:annihilation_plane'})
+    event.recipes.minecraft.crafting_shaped('ae2:annihilation_plane', [
+        'ABC',
+        'DED',
+        'FFF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': 'ae2:certus_quartz_pickaxe',
+        'C': '#forge:tools/hammers',
+        'D': '#forge:plates/certus_quartz',
+        'E': 'ae2:annihilation_core',
+        'F': '#forge:gems/fluix'
+    })
+    event.recipes.gtceu.assembler('assembler/annihilation_plane')
+        .itemInputs('ae2:certus_quartz_pickaxe', '2x #forge:plates/certus_quartz', 'ae2:annihilation_core', '3x #forge:gems/fluix')
+        .itemOutputs('ae2:annihilation_plane')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+    
+    event.remove({output: 'ae2:formation_plane'})
+    event.recipes.minecraft.crafting_shaped('ae2:formation_plane', [
+        'ABC',
+        'DED',
+        'FFF'
+    ], {
+        'A': '#forge:tools/screwdrivers',
+        'B': 'minecraft:hopper',
+        'C': '#forge:tools/hammers',
+        'D': '#forge:plates/certus_quartz',
+        'E': 'ae2:formation_core',
+        'F': '#forge:gems/fluix'
+    })
+    event.recipes.gtceu.assembler('assembler/formation_plane')
+        .itemInputs('minecraft:hopper', '2x #forge:plates/certus_quartz', 'ae2:formation_core', '3x #forge:gems/fluix')
+        .itemOutputs('ae2:formation_plane')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(10 * 20)
+    
+    event.recipes.gtceu.assembler('assembler/storage_monitor')
+        .itemInputs('#ae2:illuminated_panel', 'ae2:level_emitter')
+        .itemOutputs('ae2:storage_monitor')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+    event.recipes.gtceu.assembler('assembler/conversion_monitor')
+        .itemInputs('ae2:storage_monitor', 'ae2:annihilation_core', 'ae2:formation_core')
+        .itemOutputs('ae2:conversion_monitor')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+
+    event.remove({output: /expatternprovider:\w+_upgrade/})
+
+    event.remove({output: 'expatternprovider:me_packing_tape'})
+    event.recipes.gtceu.assembler('assembler/me_packing_tape')
+        .itemInputs('#forge:plates/paper')
+        .inputFluids('gtceu:glue 100')
+        .itemOutputs(Item.of('expatternprovider:me_packing_tape', '{Damage:0}'))
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(5 * 20)
+
     // 终端
     event.remove({output: 'ae2:semi_dark_monitor', type: 'minecraft:crafting_shaped'})
     event.recipes.gtceu.assembler('assembler/semi_dark_monitor')
