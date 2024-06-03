@@ -23,15 +23,750 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4DE372D65D546F68"]
+			dependencies: [
+				"420F017004E965E0"
+				"15FC6F000A1F307B"
+			]
 			id: "0BA76C311982AC22"
 			tasks: [{
 				id: "70E4DF4EB8624AE8"
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "617184C3EC4A937D"
+			tasks: [{
+				id: "219B7C025B540F0A"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["617184C3EC4A937D"]
+			id: "70F501AC6501A82A"
+			tasks: [{
+				id: "27CBED71868ABDA9"
+				item: "gtceu:mv_electric_pump"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["617184C3EC4A937D"]
+			id: "593FFB67E7DB76B8"
+			tasks: [{
+				id: "57A051845941A29D"
+				item: "gtceu:mv_conveyor_module"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["617184C3EC4A937D"]
+			id: "391ED825E3BE1561"
+			tasks: [{
+				id: "03ACC718C0E29350"
+				item: "gtceu:mv_electric_piston"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391ED825E3BE1561"]
+			id: "03F43D5023921B3F"
+			tasks: [{
+				id: "1C4486BCF216CAC4"
+				item: "gtceu:mv_robot_arm"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["617184C3EC4A937D"]
+			id: "35262717C5A33594"
+			tasks: [{
+				id: "69DF1BA25CC4F341"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: 4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["617184C3EC4A937D"]
+			id: "7E3400121FACC42F"
+			tasks: [{
+				id: "2287B712C699F333"
+				item: "gtceu:mv_sensor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "3F4D2FE654AA98B2"
+			tasks: [{
+				id: "55690FCDCD570AA9"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F4D2FE654AA98B2"]
+			id: "63FB37FD9DAE38D0"
+			tasks: [
+				{
+					id: "5AF99E8EB91BAC7A"
+					item: "gtceu:clay_dust"
+					type: "item"
+				}
+				{
+					id: "1ECB3EADEF1320E5"
+					item: "gtceu:silicon_dust"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F4D2FE654AA98B2"]
+			id: "18B6B0617FFB8198"
+			tasks: [
+				{
+					id: "11407DBDDEFE6D2A"
+					item: "gtceu:ruby_dust"
+					type: "item"
+				}
+				{
+					id: "6B35E7ED12360FE9"
+					item: "gtceu:chromium_dust"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["63FB37FD9DAE38D0"]
+			id: "251A1D95192AED28"
+			tasks: [{
+				id: "06A736B234406F55"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "500556DC6FF83F66"
+			tasks: [{
+				id: "15E5B07F7783A810"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["251A1D95192AED28"]
+			id: "0AE3BA447691929B"
+			tasks: [{
+				id: "1B3AED21E44612A8"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			hide_dependent_lines: true
+			id: "745E17F0C413ABF4"
+			tasks: [{
+				id: "4341C62D18DA4542"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"745E17F0C413ABF4"
+				"0AE3BA447691929B"
+			]
+			id: "5435178B0ABCD732"
+			tasks: [
+				{
+					id: "25C949D35ECFFE03"
+					item: "gtceu:ilc_wafer"
+					type: "item"
+				}
+				{
+					id: "40CFC90A8D62708A"
+					item: "gtceu:ram_wafer"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5435178B0ABCD732"]
+			id: "34A28118905F5589"
+			tasks: [{
+				id: "75B33E0C6EB1C0D1"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["34A28118905F5589"]
+			id: "4F20E211544474E1"
+			tasks: [{
+				id: "1ACE5253B69B6CA6"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4F20E211544474E1"
+				"34105C80414336F1"
+			]
+			id: "24629FFA416FBEA2"
+			tasks: [{
+				id: "1D7C7286D4C7DB37"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"63FB37FD9DAE38D0"
+				"6C21173B7497F1C3"
+			]
+			id: "73BECE39C319D884"
+			tasks: [{
+				id: "42CFA273BE75AA98"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73BECE39C319D884"]
+			id: "53C6D0BC69A74974"
+			tasks: [{
+				id: "60F33FB0F39E923D"
+				item: "gtceu:silicon_plate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["53C6D0BC69A74974"]
+			id: "34105C80414336F1"
+			tasks: [{
+				id: "6A7F820D35BE6CF7"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["251A1D95192AED28"]
+			id: "74468769554BEE9E"
+			tasks: [{
+				id: "1DE39E65DC1EF0EC"
+				item: "gtceu:ulpic_wafer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["74468769554BEE9E"]
+			id: "12041BB411E76E71"
+			tasks: [{
+				id: "534A573F26136C2B"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["12041BB411E76E71"]
+			id: "15FC6F000A1F307B"
+			tasks: [{
+				id: "07711B15499BF460"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"15FC6F000A1F307B"
+				"1E0E2542A5CC8FBF"
+			]
+			hide_dependent_lines: true
+			id: "6C21173B7497F1C3"
+			tasks: [{
+				id: "2F2CD9235F9743E3"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"70F501AC6501A82A"
+				"593FFB67E7DB76B8"
+			]
+			hide_dependency_lines: true
+			id: "1E0E2542A5CC8FBF"
+			tasks: [{
+				id: "2077CA39649F98BA"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "54A3322FBD19C43F"
+			tasks: [{
+				id: "72894CAE1F49EF62"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"18B6B0617FFB8198"
+				"54A3322FBD19C43F"
+			]
+			id: "420F017004E965E0"
+			tasks: [{
+				id: "27D5731EDC00EED2"
+				item: "gtceu:stainless_steel_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["391ED825E3BE1561"]
+			id: "05DBF26D304B932A"
+			tasks: [{
+				id: "1B11E6A2682FC2DB"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391ED825E3BE1561"]
+			id: "4836C71736FCBBAF"
+			tasks: [{
+				id: "05220AD42A89F443"
+				item: "gtceu:mv_bender"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4836C71736FCBBAF"]
+			id: "2307FC890284E987"
+			tasks: [{
+				id: "4C824A55A361800C"
+				item: "gtceu:aluminium_fluid_cell"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["03F43D5023921B3F"]
+			id: "2FEB62733A2ED54C"
+			tasks: [{
+				id: "2666320367408624"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E3400121FACC42F"]
+			id: "77D3B118B8AF48E7"
+			tasks: [{
+				id: "5484FBBC0E05F6C9"
+				item: {
+					Count: 1
+					id: "gtceu:portable_scanner"
+					tag: {
+						Charge: 0L
+						MaxCharge: 420000L
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F4D2FE654AA98B2"]
+			icon: {
+				Count: 1
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:oxygen"
+					}
+				}
+			}
+			id: "6D15E404986D241E"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:oxygen"
+						}
+					}
+				}
+				id: "2115EF7BF6270AF4"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:oxygen"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6D15E404986D241E"
+				"475FB693DE902ACB"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:polyethylene"
+					}
+				}
+			}
+			id: "7073A56FDA2B6CDF"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:polyethylene"
+						}
+					}
+				}
+				id: "662D185047E020AF"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:polyethylene"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DE372D65D546F68"]
+			id: "475FB693DE902ACB"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:ethylene"
+						}
+					}
+				}
+				id: "3132DC6D29208920"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:ethylene"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7073A56FDA2B6CDF"]
+			id: "381DF99DFE2CCFF1"
+			tasks: [{
+				id: "512ACB1B9EEE6D54"
+				item: "gtceu:carbon_fiber_mesh"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["381DF99DFE2CCFF1"]
+			id: "3F20D2598455233E"
+			tasks: [{
+				id: "0AD81A7164E79872"
+				item: "gtceu:carbon_fiber_plate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70F501AC6501A82A"]
+			id: "0EB6A8D72E87E52B"
+			tasks: [{
+				id: "6E83FE87D30A4006"
+				item: "gtceu:mv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7073A56FDA2B6CDF"
+				"0EB6A8D72E87E52B"
+			]
+			id: "7EADF27A41C15348"
+			tasks: [{
+				id: "11826F0A878857EE"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7EADF27A41C15348"]
+			id: "2FED8ACC38E43ACD"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sodium_persulfate"
+						}
+					}
+				}
+				id: "23508112C7C10C88"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sodium_persulfate"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7EADF27A41C15348"]
+			id: "45E5E5D8C6EB4B8D"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:iron_iii_chloride"
+						}
+					}
+				}
+				id: "03CBBB9588B5658C"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:iron_iii_chloride"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2FED8ACC38E43ACD"
+				"45E5E5D8C6EB4B8D"
+			]
+			dependency_requirement: "one_completed"
+			id: "67C639717886127C"
+			tasks: [{
+				id: "0F2019C3FADD5087"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
 		}
 	]
 	title: "&bTier 2 - 中压（MV）"

@@ -21,7 +21,7 @@
 				{
 					count: 32L
 					id: "7153DF1D1ACBBD15"
-					item: { Count: 32b, id: "gtceu:firebricks" }
+					item: { Count: 32, id: "gtceu:firebricks" }
 					type: "item"
 				}
 			]
@@ -41,19 +41,19 @@
 				{
 					count: 101L
 					id: "265ED0BB9EA849BA"
-					item: { Count: 101b, id: "gtceu:firebricks" }
+					item: { Count: 101, id: "gtceu:firebricks" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "1B6AD142803D724D"
-					item: { Count: 16b, id: "gtceu:steel_frame" }
+					item: { Count: 16, id: "gtceu:steel_frame" }
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "14A253F57DE087FC"
-					item: { Count: 9b, id: "gtceu:steel_firebox_casing" }
+					item: { Count: 9, id: "gtceu:steel_firebox_casing" }
 					type: "item"
 				}
 			]
@@ -73,7 +73,7 @@
 				{
 					count: 11L
 					id: "53EB1425B464C355"
-					item: { Count: 11b, id: "gtceu:heatproof_machine_casing" }
+					item: { Count: 11, id: "gtceu:heatproof_machine_casing" }
 					type: "item"
 				}
 				{
@@ -99,7 +99,7 @@
 				{
 					count: 2L
 					id: "7782BA323FFC6E23"
-					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
 					type: "item"
 				}
 				{
@@ -110,13 +110,13 @@
 				{
 					count: 128L
 					id: "23B05FD722594E0D"
-					item: { Count: 64b, id: "gtceu:cupronickel_double_wire" }
+					item: { Count: 64, id: "gtceu:cupronickel_double_wire" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "6942A2A2EB4D9D0E"
-					item: { Count: 16b, id: "gtceu:cupronickel_coil_block" }
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
 					type: "item"
 				}
 			]
@@ -126,25 +126,28 @@
 		{
 			dependencies: [
 				"6B90487E016BA4EE"
-				"2D0EEDEADE28DBC9"
+				"6C21173B7497F1C3"
 			]
 			id: "40CA67379CEA6845"
 			tasks: [{
 				count: 16L
 				id: "01D86DB17E44E3BA"
-				item: { Count: 16b, id: "gtceu:kanthal_coil_block" }
+				item: { Count: 16, id: "gtceu:kanthal_coil_block" }
 				type: "item"
 			}]
 			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["40CA67379CEA6845"]
+			dependencies: [
+				"40CA67379CEA6845"
+				"2D0EEDEADE28DBC9"
+			]
 			id: "5D217578AB4356F7"
 			tasks: [{
 				count: 16L
 				id: "5F726AAD4223A26E"
-				item: { Count: 16b, id: "gtceu:nichrome_coil_block" }
+				item: { Count: 16, id: "gtceu:nichrome_coil_block" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -168,11 +171,11 @@
 			tasks: [{
 				count: 16L
 				id: "69A92FF0E7F10423"
-				item: { Count: 16b, id: "gtceu:hssg_coil_block" }
+				item: { Count: 16, id: "gtceu:hssg_coil_block" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 8.0d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["18313556A8D86D85"]
@@ -180,11 +183,11 @@
 			tasks: [{
 				count: 16L
 				id: "1B9A5C593FA1937F"
-				item: { Count: 16b, id: "gtceu:naquadah_coil_block" }
+				item: { Count: 16, id: "gtceu:naquadah_coil_block" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.0d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["779264E6F3AD447E"]
@@ -192,11 +195,11 @@
 			tasks: [{
 				count: 16L
 				id: "436322848E12F6B9"
-				item: { Count: 16b, id: "gtceu:trinium_coil_block" }
+				item: { Count: 16, id: "gtceu:trinium_coil_block" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: 0.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["2284266F629069A0"]
@@ -204,13 +207,14 @@
 			tasks: [{
 				count: 16L
 				id: "5D921ECA8B78983A"
-				item: { Count: 16b, id: "gtceu:tritanium_coil_block" }
+				item: { Count: 16, id: "gtceu:tritanium_coil_block" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: 0.0d
+			y: 16.0d
 		}
 		{
+			dependencies: ["62D53EE433443D92"]
 			icon: "gtceu:vacuum_freezer"
 			id: "2D0EEDEADE28DBC9"
 			tasks: [
@@ -222,12 +226,12 @@
 				{
 					count: 22L
 					id: "168AC0245C2CADB0"
-					item: { Count: 22b, id: "gtceu:frostproof_machine_casing" }
+					item: { Count: 22, id: "gtceu:frostproof_machine_casing" }
 					type: "item"
 				}
 			]
 			x: 2.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6B90487E016BA4EE"]
@@ -257,13 +261,13 @@
 				{
 					count: 10L
 					id: "284BA2E039BF7344"
-					item: { Count: 10b, id: "gtceu:pump_deck" }
+					item: { Count: 10, id: "gtceu:pump_deck" }
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "498F44E68B7FD09C"
-					item: { Count: 10b, id: "gtceu:treated_wood_frame" }
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
 					type: "item"
 				}
 				{
@@ -329,6 +333,35 @@
 			}]
 			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["79345EDF1AD03E32"]
+			id: "62D53EE433443D92"
+			tasks: [
+				{
+					id: "276B871385AFDA5F"
+					item: "gtceu:cleanroom"
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "22D62D59DAEE928D"
+					item: { Count: 72, id: "gtceu:plascrete" }
+					type: "item"
+				}
+				{
+					id: "6EB999499033AB5F"
+					item: "gtceu:mv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "25AE2BF34A20A285"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 6.0d
 		}
 	]
 	title: "多方块机器"

@@ -5,7 +5,7 @@
 	filename: "tier_0"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "gtceu:bronze_pickaxe"
 		tag: {
 			DisallowContainerItem: 0b
@@ -32,7 +32,7 @@
 			rewards: [{
 				id: "7A6E829EA775B359"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -58,7 +58,7 @@
 			tasks: [{
 				count: 25L
 				id: "6F81C23EEEAA3DF2"
-				item: { Count: 25b, id: "minecraft:stone" }
+				item: { Count: 25, id: "minecraft:stone" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -99,13 +99,13 @@
 				{
 					count: 128L
 					id: "1E886EEC4FE1E6DE"
-					item: { Count: 64b, id: "minecraft:sand" }
+					item: { Count: 64, id: "minecraft:sand" }
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "4D829F3DA7B7811C"
-					item: { Count: 64b, id: "minecraft:clay_ball" }
+					item: { Count: 64, id: "minecraft:clay_ball" }
 					type: "item"
 				}
 			]
@@ -126,7 +126,7 @@
 				{
 					count: 25L
 					id: "2FCC06BC9146109D"
-					item: { Count: 25b, id: "gtceu:coke_oven_bricks" }
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
 					type: "item"
 				}
 			]
@@ -139,7 +139,7 @@
 			tasks: [{
 				count: 64L
 				id: "7C8386DD6AE01B25"
-				item: { Count: 64b, id: "gtceu:coke_oven_brick" }
+				item: { Count: 64, id: "gtceu:coke_oven_brick" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -190,19 +190,19 @@
 				{
 					count: 16L
 					id: "4A7C510D204B6674"
-					item: { Count: 16b, id: "minecraft:raw_iron" }
+					item: { Count: 16, id: "minecraft:raw_iron" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "6E0E53D40DCF157C"
-					item: { Count: 16b, id: "gtceu:raw_goethite" }
+					item: { Count: 16, id: "gtceu:raw_goethite" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "68C4D7BBE2F8BCA9"
-					item: { Count: 16b, id: "gtceu:raw_hematite" }
+					item: { Count: 16, id: "gtceu:raw_hematite" }
 					type: "item"
 				}
 				{
@@ -228,13 +228,13 @@
 				{
 					count: 32L
 					id: "15E5899BC6B357E1"
-					item: { Count: 32b, id: "gtceu:raw_chalcopyrite" }
+					item: { Count: 32, id: "gtceu:raw_chalcopyrite" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "76062D6B7B84052E"
-					item: { Count: 32b, id: "minecraft:raw_copper" }
+					item: { Count: 32, id: "minecraft:raw_copper" }
 					type: "item"
 				}
 				{
@@ -246,7 +246,7 @@
 				{
 					count: 16L
 					id: "447F71C01D43E57F"
-					item: { Count: 16b, id: "minecraft:raw_iron" }
+					item: { Count: 16, id: "minecraft:raw_iron" }
 					type: "item"
 				}
 			]
@@ -260,13 +260,13 @@
 				{
 					count: 16L
 					id: "1D76FD7A981BF642"
-					item: { Count: 16b, id: "gtceu:raw_coal" }
+					item: { Count: 16, id: "gtceu:raw_coal" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "76B81C8111B470A4"
-					item: { Count: 16b, id: "gtceu:raw_lignite" }
+					item: { Count: 16, id: "gtceu:raw_lignite" }
 					type: "item"
 				}
 			]
@@ -280,25 +280,25 @@
 				{
 					count: 16L
 					id: "19283959E23B2F95"
-					item: { Count: 16b, id: "gtceu:raw_malachite" }
+					item: { Count: 16, id: "gtceu:raw_malachite" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "0621F1A0C83B580C"
-					item: { Count: 16b, id: "gtceu:raw_hematite" }
+					item: { Count: 16, id: "gtceu:raw_hematite" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "3E1B1587637D0443"
-					item: { Count: 16b, id: "gtceu:raw_yellow_limonite" }
+					item: { Count: 16, id: "gtceu:raw_yellow_limonite" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "345E5325DD7D4DC5"
-					item: { Count: 16b, id: "gtceu:raw_goethite" }
+					item: { Count: 16, id: "gtceu:raw_goethite" }
 					type: "item"
 				}
 			]
@@ -313,7 +313,7 @@
 			tasks: [{
 				id: "1E57D770578B5FD1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tetra:modular_double"
 					tag: {
 						Damage: 0
@@ -339,7 +339,7 @@
 			tasks: [{
 				count: 16L
 				id: "2865437F5DE8A22F"
-				item: { Count: 16b, id: "minecraft:copper_ingot" }
+				item: { Count: 16, id: "minecraft:copper_ingot" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -351,7 +351,7 @@
 			tasks: [{
 				count: 16L
 				id: "27CCBB219BA599BE"
-				item: { Count: 16b, id: "gtceu:tin_ingot" }
+				item: { Count: 16, id: "gtceu:tin_ingot" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -367,13 +367,13 @@
 				{
 					count: 32L
 					id: "3A40295E821F324D"
-					item: { Count: 32b, id: "gtceu:bronze_dust" }
+					item: { Count: 32, id: "gtceu:bronze_dust" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "22E0E4997225C1B3"
-					item: { Count: 32b, id: "gtceu:bronze_ingot" }
+					item: { Count: 32, id: "gtceu:bronze_ingot" }
 					type: "item"
 				}
 			]
@@ -402,7 +402,7 @@
 				{
 					id: "2F16BD10D1FAF6A8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:tools/hammers"
@@ -413,7 +413,7 @@
 				{
 					id: "25D81601E208E4A5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:tools/wrench"
@@ -424,7 +424,7 @@
 				{
 					id: "3A6F46DB4C8C5488"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:tools/files"
@@ -435,7 +435,7 @@
 				{
 					id: "48C4AEF8C64A63C3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:tools/screwdrivers"
@@ -446,7 +446,7 @@
 				{
 					id: "4165B1579E2CB36D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:tools/saws"
@@ -461,7 +461,7 @@
 		{
 			dependencies: ["6C192811F4E486ED"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "eccentrictome:tome"
 				tag: {
 					"eccentrictome:mods": {
@@ -574,7 +574,7 @@
 			rewards: [{
 				id: "5E2EF00AEBC9BA12"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "eccentrictome:tome"
 					tag: {
 						"eccentrictome:mods": {
@@ -707,13 +707,13 @@
 				{
 					count: 10L
 					id: "77C0A8AEFF00A65A"
-					item: { Count: 10b, id: "gtceu:pump_deck" }
+					item: { Count: 10, id: "gtceu:pump_deck" }
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "659C4895E24DD656"
-					item: { Count: 10b, id: "gtceu:treated_wood_frame" }
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
 					type: "item"
 				}
 				{

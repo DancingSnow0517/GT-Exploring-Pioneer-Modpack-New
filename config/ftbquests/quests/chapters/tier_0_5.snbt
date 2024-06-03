@@ -5,7 +5,7 @@
 	filename: "tier_0_5"
 	group: ""
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "minecraft:flint_and_steel"
 		tag: {
 			Damage: 0
@@ -154,7 +154,7 @@
 			tasks: [{
 				id: "372F0B3304E8FE7F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:flint_and_steel"
 					tag: {
 						Damage: 0
@@ -235,7 +235,7 @@
 			tasks: [{
 				count: 3L
 				id: "363E74A7A75C4652"
-				item: { Count: 3b, id: "gtceu:red_alloy_single_cable" }
+				item: { Count: 3, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -255,7 +255,7 @@
 				{
 					count: 2L
 					id: "2DF2F842AF01ED9F"
-					item: { Count: 2b, id: "gtceu:iron_rod" }
+					item: { Count: 2, id: "gtceu:iron_rod" }
 					type: "item"
 				}
 				{
@@ -266,13 +266,13 @@
 				{
 					count: 2L
 					id: "1E666C066095C6BD"
-					item: { Count: 2b, id: "gtceu:tin_single_cable" }
+					item: { Count: 2, id: "gtceu:tin_single_cable" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "69C4F98031200342"
-					item: { Count: 4b, id: "gtceu:copper_single_wire" }
+					item: { Count: 4, id: "gtceu:copper_single_wire" }
 					type: "item"
 				}
 			]
@@ -351,7 +351,7 @@
 			tasks: [{
 				count: 2L
 				id: "684B533D4A22D494"
-				item: { Count: 2b, id: "gtceu:resistor" }
+				item: { Count: 2, id: "gtceu:resistor" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -389,7 +389,7 @@
 				{
 					count: 4L
 					id: "4BDE4B984267D0A0"
-					item: { Count: 4b, id: "gtceu:tin_plate" }
+					item: { Count: 4, id: "gtceu:tin_plate" }
 					type: "item"
 				}
 				{
@@ -445,7 +445,7 @@
 				{
 					count: 32L
 					id: "28F842385C79D778"
-					item: { Count: 32b, id: "gtceu:firebricks" }
+					item: { Count: 32, id: "gtceu:firebricks" }
 					type: "item"
 				}
 			]
@@ -484,7 +484,7 @@
 			tasks: [{
 				count: 16L
 				id: "1440628754D1F24A"
-				item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+				item: { Count: 16, id: "gtceu:red_alloy_ingot" }
 				type: "item"
 			}]
 			x: -6.5d
