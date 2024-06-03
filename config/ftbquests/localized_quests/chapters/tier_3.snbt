@@ -33,6 +33,366 @@
 			x: 0.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			icon: "gtceu:hv_robot_arm"
+			id: "79345EDF1AD03E32"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6A46BE0DEEDAC3FA"
+					item: "gtceu:hv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "088BA7D5D4B9CAD6"
+					item: "gtceu:hv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "43727F817B5065A2"
+					item: "gtceu:hv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "4D227BC4555AC6CD"
+					item: "gtceu:hv_robot_arm"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"79345EDF1AD03E32"
+				"333126537EAF687B"
+			]
+			id: "72088CB2BDE122D9"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "078D3ED6CF7714B9"
+					item: "gtceu:hv_sensor"
+					type: "item"
+				}
+				{
+					id: "7769B3F47FE5F410"
+					item: "gtceu:hv_emitter"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			id: "67359DE388397620"
+			tasks: [{
+				id: "6F99DA872173093B"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67359DE388397620"]
+			id: "0E0F72ECAE49BA6F"
+			tasks: [{
+				id: "7CB10FA7EF427A80"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67359DE388397620"]
+			id: "59AD59D18C50FEDA"
+			tasks: [{
+				id: "001C4BD0F9CCD02C"
+				item: "gtceu:simple_soc_wafer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["59AD59D18C50FEDA"]
+			id: "4450E45556C51ED2"
+			tasks: [{
+				id: "156B9FC7BDB26A1A"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"67359DE388397620"
+				"62D53EE433443D92"
+			]
+			id: "57D6B1F1A996FF7F"
+			tasks: [{
+				id: "3515DA9BE3A16D26"
+				item: "gtceu:cpu_wafer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57D6B1F1A996FF7F"]
+			id: "0E083B40CE10FA99"
+			tasks: [{
+				id: "288CE14149CE52E7"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E083B40CE10FA99"]
+			id: "6A3FFECFE148C199"
+			tasks: [{
+				id: "6C6BB4C6E521F366"
+				item: "gtceu:inductor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A3FFECFE148C199"]
+			id: "5761CA0395F399C2"
+			tasks: [{
+				id: "0DD778E3E1BDF05E"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5761CA0395F399C2"]
+			id: "534CF6622BDD0D7C"
+			tasks: [{
+				id: "539AB0B907567C6E"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["534CF6622BDD0D7C"]
+			id: "263C863F54F93CE9"
+			tasks: [{
+				id: "01E60445124071DA"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["263C863F54F93CE9"]
+			id: "7940B9022DED7480"
+			tasks: [{
+				id: "390B017359A4667A"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["79345EDF1AD03E32"]
+			id: "2D016A68E0650EF4"
+			tasks: [{
+				id: "17FDB40E5F2D021F"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D016A68E0650EF4"]
+			id: "333126537EAF687B"
+			tasks: [{
+				id: "6C82447BA23CA4F6"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["72088CB2BDE122D9"]
+			id: "6B3F801127D1BD0C"
+			tasks: [{
+				id: "3731185354CDC685"
+				item: "gtceu:hv_laser_engraver"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["79345EDF1AD03E32"]
+			id: "3E42AA186E51EBD2"
+			tasks: [{
+				id: "68FDADC0F3A54DDF"
+				item: "gtceu:hv_cutter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E42AA186E51EBD2"]
+			id: "63BB404F18972842"
+			tasks: [{
+				id: "0DA0B9BEE530A2CC"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63BB404F18972842"]
+			id: "768D81C64CB2381F"
+			tasks: [{
+				id: "767F0CABCB9D462F"
+				item: "gtceu:phosphorus_wafer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6B3F801127D1BD0C"
+				"768D81C64CB2381F"
+				"62D53EE433443D92"
+			]
+			id: "36DE6C7B1FB8A9B5"
+			tasks: [{
+				id: "2E6491172BF0D8AB"
+				item: "gtceu:nand_memory_wafer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"36DE6C7B1FB8A9B5"
+				"57D6B1F1A996FF7F"
+			]
+			id: "7938670E7F79EA4F"
+			tasks: [{
+				id: "7F67D5DEAA94916E"
+				item: "gtceu:data_stick"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["79345EDF1AD03E32"]
+			id: "1798694AA0E75CF9"
+			tasks: [{
+				id: "300EFBD35E71F4A7"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7B177D437F249641"
+				"1798694AA0E75CF9"
+			]
+			id: "673E01D01BE4B732"
+			tasks: [{
+				id: "2736CC8469903489"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A73C6BCAB032A16"]
+			id: "7B177D437F249641"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:sodium_potassium"
+						}
+					}
+				}
+				id: "7BC354F83845F162"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "gtceu:fluid_cell"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									value: {
+										Fluid: {
+											Amount: 1000
+											FluidName: "gtceu:sodium_potassium"
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["79345EDF1AD03E32"]
+			id: "17160DA2201C58DE"
+			tasks: [{
+				id: "4E0D469C1BA64023"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
 	]
 	title: "{gtep.tier_3.title}"
 }

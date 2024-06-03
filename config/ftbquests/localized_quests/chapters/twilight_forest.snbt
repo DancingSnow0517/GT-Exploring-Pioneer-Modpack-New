@@ -30,7 +30,7 @@
 					count: 16L
 					id: "733CD8C4449FACE9"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_garnierite"
 					}
 					type: "item"
@@ -39,7 +39,7 @@
 					count: 16L
 					id: "02FA2B60AF55B5C6"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_nickel"
 					}
 					type: "item"
@@ -48,7 +48,7 @@
 					count: 16L
 					id: "36287E36E841C508"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_cobaltite"
 					}
 					type: "item"
@@ -57,7 +57,7 @@
 					count: 16L
 					id: "6518C3C6DE569471"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_pentlandite"
 					}
 					type: "item"
@@ -74,7 +74,7 @@
 					count: 16L
 					id: "121058CDB7AC89CE"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_galena"
 					}
 					type: "item"
@@ -83,7 +83,7 @@
 					count: 16L
 					id: "0D88AA94A36079C1"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_silver"
 					}
 					type: "item"
@@ -92,7 +92,7 @@
 					count: 16L
 					id: "7A27A04D5D269C84"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_lead"
 					}
 					type: "item"
@@ -322,7 +322,7 @@
 			tasks: [{
 				id: "664C91CA93294559"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "twilightforest:giant_pickaxe"
 					tag: {
 						Damage: 0
@@ -339,7 +339,7 @@
 			tasks: [{
 				id: "3D3D1E1D671D4EB3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "twilightforest:lamp_of_cinders"
 					tag: {
 						Damage: 0
@@ -357,7 +357,7 @@
 				count: 6L
 				id: "7A297ACE4231641B"
 				item: {
-					Count: 6b
+					Count: 6
 					id: "twilightforest:steeleaf_ingot"
 				}
 				type: "item"
@@ -371,7 +371,7 @@
 			tasks: [{
 				id: "45C3D560F9E8EBFC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:steel_leaf_mallet"
 					tag: {
 						DisallowContainerItem: 0b

@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space_race"
+	group: ""
+	id: "320F71D067EB715E"
+	order_index: 18
+	quest_links: [ ]
+	quests: [{
+		dependencies: [
+			"6A73C6BCAB032A16"
+			"1798694AA0E75CF9"
+			"7940B9022DED7480"
+		]
+		id: "1D6B821198FBEB26"
+		tasks: [{
+			id: "7FFDB610FA3548C3"
+			item: "ad_astra:nasa_workbench"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{gtep.space_race.title}"
+}

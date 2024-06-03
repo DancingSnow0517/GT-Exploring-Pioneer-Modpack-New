@@ -346,7 +346,7 @@
 				count: 2L
 				id: "3991A21F86F32F57"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "gtceu:lv_brewery"
 				}
 				type: "item"
@@ -360,7 +360,7 @@
 				"2BEB5A2E0CABC308"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -372,7 +372,7 @@
 			id: "29423C558660684A"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -383,7 +383,7 @@
 				}
 				id: "4ACF2AFB82A66E40"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -417,7 +417,7 @@
 		{
 			dependencies: ["1DAEAF643A41822A"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -429,7 +429,7 @@
 			id: "78039C6FFFF96086"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -440,7 +440,7 @@
 				}
 				id: "19EC3D6E006BCB6B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -474,7 +474,7 @@
 		{
 			dependencies: ["1DAEAF643A41822A"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -486,7 +486,7 @@
 			id: "25C99E1490D17326"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -497,7 +497,7 @@
 				}
 				id: "456B0A4997A844CB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -531,7 +531,7 @@
 		{
 			dependencies: ["1DAEAF643A41822A"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -543,7 +543,7 @@
 			id: "0AB5D2801EBD72C2"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -554,7 +554,7 @@
 				}
 				id: "66482348964B7B20"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -588,7 +588,7 @@
 		{
 			dependencies: ["1DAEAF643A41822A"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -600,7 +600,7 @@
 			id: "0EE313A3022B7978"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -611,7 +611,7 @@
 				}
 				id: "19FE1F82C3E4D8FC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -645,7 +645,7 @@
 		{
 			dependencies: ["78039C6FFFF96086"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -657,7 +657,7 @@
 			id: "4F690B95BF7A7A45"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -668,7 +668,7 @@
 				}
 				id: "0633FD08C14F6243"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -702,7 +702,7 @@
 		{
 			dependencies: ["25C99E1490D17326"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -714,7 +714,7 @@
 			id: "495A01F179D5AB2A"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -725,7 +725,7 @@
 				}
 				id: "5B50DDAB54CC2A68"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -759,7 +759,7 @@
 		{
 			dependencies: ["0AB5D2801EBD72C2"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -771,7 +771,7 @@
 			id: "539A9713B6562CAC"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -782,7 +782,7 @@
 				}
 				id: "342667B2D0103D5F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -816,7 +816,7 @@
 		{
 			dependencies: ["0EE313A3022B7978"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -828,7 +828,7 @@
 			id: "44F6C789BF72051C"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -839,7 +839,7 @@
 				}
 				id: "6D30CA1B985B94AA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -879,7 +879,7 @@
 					count: 64L
 					id: "05686BABB30C22A7"
 					item: {
-						Count: 64b
+						Count: 64
 						id: "gtceu:long_distance_fluid_pipeline"
 					}
 					type: "item"
@@ -888,7 +888,7 @@
 					count: 2L
 					id: "7BA3467BA32A2985"
 					item: {
-						Count: 2b
+						Count: 2
 						id: "gtceu:long_distance_fluid_pipeline_endpoint"
 					}
 					type: "item"
@@ -916,7 +916,7 @@
 					count: 64L
 					id: "41C0B3D21A9499B0"
 					item: {
-						Count: 64b
+						Count: 64
 						id: "gtceu:raw_tetrahedrite"
 					}
 					type: "item"
@@ -925,7 +925,7 @@
 					count: 32L
 					id: "3910540DB1FEC134"
 					item: {
-						Count: 32b
+						Count: 32
 						id: "minecraft:raw_copper"
 					}
 					type: "item"
@@ -934,7 +934,7 @@
 					count: 16L
 					id: "7B9E8F141577241A"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_stibnite"
 					}
 					type: "item"
@@ -950,7 +950,7 @@
 				count: 16L
 				id: "7798242998B71C65"
 				item: {
-					Count: 16b
+					Count: 16
 					id: "gtceu:antimony_ingot"
 				}
 				type: "item"
@@ -968,7 +968,7 @@
 				count: 16L
 				id: "4C4BCAE287D8C9A3"
 				item: {
-					Count: 16b
+					Count: 16
 					id: "gtceu:lead_ingot"
 				}
 				type: "item"
@@ -986,7 +986,7 @@
 				count: 32L
 				id: "2D132BD450250735"
 				item: {
-					Count: 32b
+					Count: 32
 					id: "gtceu:battery_alloy_ingot"
 				}
 				type: "item"
@@ -1012,7 +1012,7 @@
 				count: 2L
 				id: "4599182C5B4BF1D9"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "gtceu:lithium_dust"
 				}
 				type: "item"
@@ -1027,7 +1027,7 @@
 				count: 2L
 				id: "20AB24FBF47D6ECA"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "gtceu:sodium_dust"
 				}
 				type: "item"
@@ -1042,7 +1042,7 @@
 				count: 2L
 				id: "209EB8E5BEDEF110"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "gtceu:cadmium_dust"
 				}
 				type: "item"
@@ -1105,7 +1105,7 @@
 					count: 16L
 					id: "580E9396B12A12DD"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_quartzite"
 					}
 					type: "item"
@@ -1114,7 +1114,7 @@
 					count: 16L
 					id: "750FFA5AD8102AE4"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_nether_quartz"
 					}
 					type: "item"
@@ -1130,7 +1130,7 @@
 				count: 16L
 				id: "5CE8F5559FD13EFE"
 				item: {
-					Count: 16b
+					Count: 16
 					id: "gtceu:quartzite_gem"
 				}
 				type: "item"
@@ -1191,7 +1191,7 @@
 					count: 2L
 					id: "10669E517303A9CF"
 					item: {
-						Count: 2b
+						Count: 2
 						id: "gtceu:long_distance_item_pipeline_endpoint"
 					}
 					type: "item"
@@ -1200,7 +1200,7 @@
 					count: 64L
 					id: "07E5EB2475D04D48"
 					item: {
-						Count: 64b
+						Count: 64
 						id: "gtceu:long_distance_item_pipeline"
 					}
 					type: "item"
@@ -1218,7 +1218,7 @@
 					count: 9L
 					id: "48D4E6D391C3A57D"
 					item: {
-						Count: 9b
+						Count: 9
 						id: "gtceu:diamond_plate"
 					}
 					type: "item"
@@ -1252,7 +1252,7 @@
 					count: 32L
 					id: "66F710A34FB2F1E0"
 					item: {
-						Count: 32b
+						Count: 32
 						id: "gtceu:tin_plate"
 					}
 					type: "item"
@@ -1261,7 +1261,7 @@
 					count: 16L
 					id: "27830FD704E0C599"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:fluid_cell"
 					}
 					type: "item"
@@ -1289,7 +1289,7 @@
 					count: 16L
 					id: "1D0FD093ADF58DE0"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_mica"
 					}
 					type: "item"
@@ -1298,7 +1298,7 @@
 					count: 16L
 					id: "6D849DF17E6DF9FA"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_kyanite"
 					}
 					type: "item"
@@ -1307,7 +1307,7 @@
 					count: 16L
 					id: "6654A4E3BB1EB9CF"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_pollucite"
 					}
 					type: "item"
@@ -1316,7 +1316,7 @@
 					count: 16L
 					id: "06FCEADF173CC75D"
 					item: {
-						Count: 16b
+						Count: 16
 						id: "gtceu:raw_cassiterite"
 					}
 					type: "item"
@@ -1364,7 +1364,7 @@
 				"35941049615A33DA"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -1376,7 +1376,7 @@
 			id: "189557328326B875"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -1387,7 +1387,7 @@
 				}
 				id: "6D0B2AEC4748CFA3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -1421,7 +1421,7 @@
 		{
 			dependencies: ["1779FADBC6E1BE4F"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -1433,7 +1433,7 @@
 			id: "74BA439F6ED66324"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:fluid_cell"
 					tag: {
 						Fluid: {
@@ -1444,7 +1444,7 @@
 				}
 				id: "4CB8DF7696A2949C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:and"
 					tag: {
 						items: [
@@ -1482,7 +1482,7 @@
 				count: 128L
 				id: "54D3B74912ED6A34"
 				item: {
-					Count: 64b
+					Count: 64
 					id: "gtceu:raw_oilsands"
 				}
 				type: "item"
@@ -1497,7 +1497,7 @@
 				count: 16L
 				id: "01558527D25EE617"
 				item: {
-					Count: 16b
+					Count: 16
 					id: "gtceu:vanadium_steel_ingot"
 				}
 				type: "item"

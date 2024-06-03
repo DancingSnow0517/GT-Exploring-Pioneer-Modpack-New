@@ -23,7 +23,7 @@
 				count: 8L
 				id: "74A5222246EB7EBA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:logs"
@@ -43,7 +43,7 @@
 				count: 8L
 				id: "5701D61013361FDF"
 				item: {
-					Count: 8b
+					Count: 8
 					id: "minecraft:gravel"
 				}
 				type: "item"
@@ -59,7 +59,7 @@
 				count: 2L
 				id: "553BC03BC6990DAE"
 				item: {
-					Count: 2b
+					Count: 2
 					id: "minecraft:flint"
 				}
 				type: "item"
@@ -74,7 +74,7 @@
 			tasks: [{
 				id: "4804375BE765A1B3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -183,7 +183,7 @@
 			tasks: [{
 				id: "7085A39B32B2EA47"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:wooden_pickaxe"
 					tag: {
 						Damage: 0
@@ -202,7 +202,7 @@
 			tasks: [{
 				id: "58B6EE5319B73C65"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:weak_nbt"
 					tag: {
 						value: {
@@ -235,7 +235,7 @@
 			tasks: [{
 				id: "63056F37F17D880F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:weak_nbt"
 					tag: {
 						value: {
@@ -270,7 +270,7 @@
 				count: 16L
 				id: "2CFB9F48264201B5"
 				item: {
-					Count: 16b
+					Count: 16
 					id: "minecraft:cobblestone"
 				}
 				type: "item"
@@ -285,7 +285,7 @@
 			tasks: [{
 				id: "7EB8A24F150874FC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:weak_nbt"
 					tag: {
 						value: {
@@ -325,7 +325,7 @@
 			tasks: [{
 				id: "1F3383B551EA4549"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:wood_mallet"
 					tag: {
 						DisallowContainerItem: 0b
@@ -350,7 +350,7 @@
 			tasks: [{
 				id: "3B8D556614CD17FD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:beds"
