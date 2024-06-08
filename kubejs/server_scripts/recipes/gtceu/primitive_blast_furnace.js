@@ -4,8 +4,6 @@ ServerEvents.recipes(event => {
     event.remove({id: 'ad_astra:steel_ingot'})
     event.remove({id: 'ad_astra:steel_block'})
     event.remove({id: 'ad_astra:steel_ingot_from_steel_block'})
-    event.remove({id: 'mekanism:processing/steel/ingot/from_nuggets'})
-    event.remove({id: 'mekanism:storage_blocks/steel'})
 
     event.shaped(
         'gtceu:large_primitive_blast_furnace', [
