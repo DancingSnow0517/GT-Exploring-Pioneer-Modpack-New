@@ -4,12 +4,12 @@
   "version": "0.1",
   "files": [
     {
-      "filename": "epimorphism-1.20.1-1.0.1-build_30.jar",
-      "url": "https://github.com/EpimorphicPioneers/Epimorphism-Modern/releases/download/1.20.1-1.0.1-build_30/epimorphism-1.20.1-1.0.1-build_30.jar"
+      "filename": "epimorphism-1.20.1-1.0.1-build_43.jar",
+      "url": "https://github.com/EpimorphicPioneers/Epimorphism-Modern/releases/download/1.20.1-1.0.1-build_43/epimorphism-1.20.1-1.0.1-build_43.jar"
     },
     {
-      "filename": "monomorphism-1.20.1-1.0.9-build_10.jar",
-      "url": "https://github.com/EpimorphicPioneers/Monomorphism-Lib/releases/download/1.20.1-1.0.9-build_10/monomorphism-1.20.1-1.0.9-build_10.jar"
+      "filename": "monomorphism-1.20.1-1.1.0-build.23.jar",
+      "url": "https://github.com/EpimorphicPioneers/Monomorphism-Lib/releases/download/1.20.1-1.1.0-build.23/monomorphism-1.20.1-1.1.0-build.23.jar"
     }
   ]
 }

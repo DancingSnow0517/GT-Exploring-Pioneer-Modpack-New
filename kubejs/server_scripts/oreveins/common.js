@@ -1,6 +1,5 @@
 // priority 80
 const OVERWORLD = 'minecraft:overworld'
-const END = 'minecraft:the_end'
 
 const AETHER = 'aether:the_aether'
 const TWILIGHT_FOREST = "twilightforest:twilight_forest"
@@ -203,7 +202,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(50)
         vein.density(1)
         vein.layer('all')
-        vein.dimensions(OVERWORLD, END, MOON, CERES)
+        vein.dimensions(OVERWORLD, MOON, CERES)
         vein.heightRangeUniform(-60, 70)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Chalcopyrite, 3)
@@ -246,7 +245,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(40)
         vein.density(0.9)
         vein.layer('all')
-        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, END, MARS)
+        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, MARS)
         vein.heightRangeUniform(-30, 70)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Magnetite, 3)
@@ -351,7 +350,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(40)
         vein.density(0.9)
         vein.layer('all')
-        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, END, MARS)
+        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, MARS)
         vein.heightRangeUniform(50, 180)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Magnetite, 3)
@@ -415,7 +414,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(30)
         vein.density(0.4)
         vein.layer('all')
-        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, END, MOON, IO, VENUS)
+        vein.dimensions(OVERWORLD, TWILIGHT_FOREST, MOON, IO, VENUS)
         vein.heightRangeUniform(80, 220)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(patten => patten
@@ -433,7 +432,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(45)
         vein.density(0.45)
         vein.layer('all')
-        vein.dimensions(TWILIGHT_FOREST, END, CERES)
+        vein.dimensions(TWILIGHT_FOREST, CERES)
         vein.heightRangeUniform(-40, 20)
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.Bentonite, 2, 0, 20)
@@ -451,7 +450,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.clusterSize(30)
         vein.density(0.5)
         vein.layer('all')
-        vein.dimensions(TWILIGHT_FOREST, END, MOON, CERES, MERCURY)
+        vein.dimensions(TWILIGHT_FOREST, MOON, CERES, MERCURY)
         vein.heightRangeUniform(-30, 40)
         vein.dikeVeinGenerator(generator => generator
             .withBlock(GTMaterials.Wulfenite, 2, 10, 40)
@@ -518,6 +517,107 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Nickel)
+            .placement('above')
+        )
+    })
+
+    event.add('kubejs:quartzite', vein => {
+        vein.weight(20)
+        vein.clusterSize(40)
+        vein.density(0.35)
+        vein.layer('all')
+        vein.dimensions(MOON, MARS, IO, VENUS)
+        vein.heightRangeUniform(-30, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(2).mat(GTMaterials.Quartzite).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Barite).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Quartzite)
+            .placement('above')
+        )
+    })
+
+    event.add('kubejs:monazite', vein => {
+        vein.weight(20)
+        vein.clusterSize(40)
+        vein.density(0.35)
+        vein.layer('all')
+        vein.dimensions(MOON, DEIMOS, CERES, IO, VENUS)
+        vein.heightRangeUniform(-30, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.Monazite).size(1, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.Neodymium).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Monazite)
+            .placement('above')
+        )
+    })
+
+    event.add('kubejs:ilmenite', vein => {
+        vein.weight(16)
+        vein.clusterSize(35)
+        vein.density(0.4)
+        vein.layer('all')
+        vein.dimensions(MOON, CERES, MERCURY)
+        vein.heightRangeUniform(-10, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(patten => patten
+                .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.Chromite).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Ilmenite)
+            .placement("above")
+        )
+    })
+
+    event.add('kubejs:bauxite', vein => {
+        vein.weight(16)
+        vein.clusterSize(35)
+        vein.density(0.4)
+        vein.layer('all')
+        vein.dimensions(MOON, CERES, MERCURY)
+        vein.heightRangeUniform(-40, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(patten => patten
+                .layer(l => l.weight(2).mat(GTMaterials.Bauxite).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(1, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.Aluminium).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Bauxite)
+            .placement("above")
+        )
+    })
+
+    event.add('kubejs:galena', vein => {
+        vein.weight(40)
+        vein.clusterSize(40)
+        vein.density(0.35)
+        vein.layer('all')
+        vein.dimensions(MOON, MARS, VENUS)
+        vein.heightRangeUniform(-40, 10)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Galena).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Silver).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Lead).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Galena)
             .placement('above')
         )
     })
