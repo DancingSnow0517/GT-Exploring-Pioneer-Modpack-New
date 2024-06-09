@@ -23,15 +23,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A73C6BCAB032A16"]
+			dependencies: ["4A69DCC011119BD0"]
 			id: "57ABC2BB78EDA45E"
 			tasks: [{
 				id: "774029761EC999EB"
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6A73C6BCAB032A16"]
@@ -392,6 +392,187 @@
 			}]
 			x: 1.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["17160DA2201C58DE"]
+			id: "77C8AC68CE19BE92"
+			tasks: [
+				{
+					count: 64L
+					id: "52579BD64506A165"
+					item: {
+						Count: 64
+						id: "gtceu:raw_bastnasite"
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "18EB157B5F6A6F26"
+					item: "gtceu:raw_monazite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "35F95865EB4EA988"
+					item: {
+						Count: 32
+						id: "gtceu:raw_neodymium"
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["17160DA2201C58DE"]
+			id: "6686D182032EA368"
+			tasks: [
+				{
+					count: 32L
+					id: "3056B98BF7E729E3"
+					item: {
+						Count: 32
+						id: "gtceu:raw_bauxite"
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "053F0D0858BF1B8D"
+					item: {
+						Count: 32
+						id: "gtceu:raw_ilmenite"
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "450EC7211A04BF41"
+					item: {
+						Count: 32
+						id: "gtceu:raw_aluminium"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["17160DA2201C58DE"]
+			id: "308E1993621AC545"
+			tasks: [
+				{
+					count: 64L
+					id: "193D480131438CF1"
+					item: {
+						Count: 64
+						id: "gtceu:raw_ilmenite"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "704FBCA483F25B36"
+					item: {
+						Count: 16
+						id: "gtceu:raw_chromite"
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"308E1993621AC545"
+				"6686D182032EA368"
+			]
+			dependency_requirement: "one_completed"
+			id: "6374B1C080F7F95F"
+			tasks: [{
+				count: 48L
+				id: "4E2A1BF37EF115A8"
+				item: {
+					Count: 48
+					id: "gtceu:rutile_dust"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6374B1C080F7F95F"]
+			id: "4A69DCC011119BD0"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:titanium_tetrachloride"
+							}
+						}
+					}
+					id: "381D5DCB1FE66ADB"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:id_regex"
+									tag: {
+										value: "gtceu:fluid_cell"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										value: {
+											Fluid: {
+												Amount: 1000
+												FluidName: "gtceu:titanium_tetrachloride"
+											}
+										}
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3D3BCA95ED652DF7"
+					item: {
+						Count: 2
+						id: "gtceu:magnesium_dust"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["77C8AC68CE19BE92"]
+			id: "640342776F646FEA"
+			tasks: [{
+				id: "28B2FFE33DB6C289"
+				item: "gtceu:smd_inductor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
 		}
 	]
 	title: "{gtep.tier_3.title}"
