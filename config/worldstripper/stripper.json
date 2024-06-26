@@ -55,9 +55,11 @@
     "minecraft:soul_sand",
     "minecraft:magma_block",
     "minecraft:soul_soil",
-    "kubejs:ceres_stone",
-    "kubejs:ceres_surface",
     "minecraft:dripstone_block",
-    "minecraft:pointed_dripstone"
+    "minecraft:pointed_dripstone",
+    "epcore:ceres_stone",
+    "epcore:ceres_surface",
+    "epcore:deimos_stone",
+    "epcore:deimos_surface"
   ]
 }

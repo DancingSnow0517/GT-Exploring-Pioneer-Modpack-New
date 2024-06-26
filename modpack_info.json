@@ -4,16 +4,20 @@
   "version": "0.1",
   "files": [
     {
-      "filename": "gtceu-1.20.1-1.2.3.a-build_753.jar",
-      "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/1.20.1-1.2.3.a-build_753/gtceu-1.20.1-1.2.3.a-build_753.jar"
+      "filename": "gtceu-1.20.1-1.3.0-a-build_828.jar",
+      "url": "https://github.com/GregTechCEu/GregTech-Modern/releases/download/1.20.1-1.3.0-a-build_828/gtceu-1.20.1-1.3.0-a-build_828.jar"
     },
     {
       "filename": "epimorphism-1.20.1-1.0.1-build_48.jar",
       "url": "https://github.com/EpimorphicPioneers/Epimorphism-Modern/releases/download/1.20.1-1.0.1-build_47/epimorphism-1.20.1-1.0.1-build_48.jar"
     },
     {
-      "filename": "monomorphism-1.20.1-1.1.0-build.23.jar",
-      "url": "https://github.com/EpimorphicPioneers/Monomorphism-Lib/releases/download/1.20.1-1.1.0-build.23/monomorphism-1.20.1-1.1.0-build.23.jar"
+      "filename": "monomorphism-1.20.1-1.1.1-build.25.jar",
+      "url": "https://github.com/EpimorphicPioneers/Monomorphism-Lib/releases/download/1.20.1-1.1.1-build.25/monomorphism-1.20.1-1.1.1-build.25.jar"
+    },
+    {
+      "filename": "epcore-1.20.1-1.0.0-build.13.jar",
+      "url": "https://github.com/EpimorphicPioneers/ExploringPioneerCoreMod/releases/download/1.20.1-1.0.0-build.13/epcore-1.20.1-1.0.0-build.13.jar"
     }
   ]
 }
